@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Experiment: JS Getters/Setters in IE7, IE6, etc.</title>
+	<atom:link href="http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/feed/" rel="self" type="application/rss+xml" />
+	<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/</link>
+	<description>this title probably isn&#039;t very original</description>
+	<lastBuildDate>Fri, 30 May 2014 19:32:06 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.1</generator>
+	<item>
+		<title>By: miscace</title>
+		<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/comment-page-1/#comment-62228</link>
+		<dc:creator><![CDATA[miscace]]></dc:creator>
+		<pubDate>Tue, 16 Oct 2012 06:12:17 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.com/wp/?p=937#comment-62228</guid>
+		<description><![CDATA[Thx your code.
+My code is follow:
+Object.defineProperty(this, &quot;MaxOverlappingBlocksRowCount&quot;, {
+        get: function () {
+            return _maxOverlappingBlocksRowCount;
+        },
+        set: function (newValue) {
+            _maxOverlappingBlocksRowCount = newValue;
+            this.OnPropertyChanged(&quot;MaxOverlappingBlocksRowCount&quot;, newValue);
+        },
+        enumerable: true,
+        configurable: true
+    });
+
+include you getset lib in my html file:
+
+
+
+and I change above code like this:
+try{
+getset(function(){
+     Object.defineProperty(this, &quot;MaxOverlappingBlocksRowCount&quot;, {
+        get: function () {
+            return _maxOverlappingBlocksRowCount;
+        },
+        set: function (newValue) {
+            _maxOverlappingBlocksRowCount = newValue;
+            this.OnPropertyChanged(&quot;MaxOverlappingBlocksRowCount&quot;, newValue);
+        },
+        enumerable: true,
+        configurable: true
+    });
+});
+}catch(e){
+  if (console){
+     console.log();
+  }
+}
+
+is it right?]]></description>
+		<content:encoded><![CDATA[<p>Thx your code.<br />
+My code is follow:<br />
+Object.defineProperty(this, &#8220;MaxOverlappingBlocksRowCount&#8221;, {<br />
+        get: function () {<br />
+            return _maxOverlappingBlocksRowCount;<br />
+        },<br />
+        set: function (newValue) {<br />
+            _maxOverlappingBlocksRowCount = newValue;<br />
+            this.OnPropertyChanged(&#8220;MaxOverlappingBlocksRowCount&#8221;, newValue);<br />
+        },<br />
+        enumerable: true,<br />
+        configurable: true<br />
+    });</p>
+<p>include you getset lib in my html file:</p>
+<p>and I change above code like this:<br />
+try{<br />
+getset(function(){<br />
+     Object.defineProperty(this, &#8220;MaxOverlappingBlocksRowCount&#8221;, {<br />
+        get: function () {<br />
+            return _maxOverlappingBlocksRowCount;<br />
+        },<br />
+        set: function (newValue) {<br />
+            _maxOverlappingBlocksRowCount = newValue;<br />
+            this.OnPropertyChanged(&#8220;MaxOverlappingBlocksRowCount&#8221;, newValue);<br />
+        },<br />
+        enumerable: true,<br />
+        configurable: true<br />
+    });<br />
+});<br />
+}catch(e){<br />
+  if (console){<br />
+     console.log();<br />
+  }<br />
+}</p>
+<p>is it right?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: anonymous</title>
+		<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/comment-page-1/#comment-28132</link>
+		<dc:creator><![CDATA[anonymous]]></dc:creator>
+		<pubDate>Mon, 03 Oct 2011 22:40:42 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.com/wp/?p=937#comment-28132</guid>
+		<description><![CDATA[I can&#039;t seem to get this working properly... could you provide the source code file?]]></description>
+		<content:encoded><![CDATA[<p>I can&#8217;t seem to get this working properly&#8230; could you provide the source code file?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: SWL-Projekt &#187; Object.defineHybridProperty</title>
+		<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/comment-page-1/#comment-22843</link>
+		<dc:creator><![CDATA[SWL-Projekt &#187; Object.defineHybridProperty]]></dc:creator>
+		<pubDate>Sat, 26 Mar 2011 19:20:08 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.com/wp/?p=937#comment-22843</guid>
+		<description><![CDATA[[...] friendly answer for a cross browser get/set implementation, and surely much more friendly than what antimatter15 proposed some time ago (Pssss! dude, I could not find your real name in the &#8220;About&#8221; [...]]]></description>
+		<content:encoded><![CDATA[<p>[...] friendly answer for a cross browser get/set implementation, and surely much more friendly than what antimatter15 proposed some time ago (Pssss! dude, I could not find your real name in the &#8220;About&#8221; [...]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: alexander farkas</title>
+		<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/comment-page-1/#comment-18793</link>
+		<dc:creator><![CDATA[alexander farkas]]></dc:creator>
+		<pubDate>Thu, 30 Dec 2010 12:33:14 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.com/wp/?p=937#comment-18793</guid>
+		<description><![CDATA[I have also worked on this. My approach is using DHTML behaviors. You can find this @https://github.com/aFarkas/x-browser-accessors]]></description>
+		<content:encoded><![CDATA[<p>I have also worked on this. My approach is using DHTML behaviors. You can find this @https://github.com/aFarkas/x-browser-accessors</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Zoltan Hawryluk</title>
+		<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/comment-page-1/#comment-15984</link>
+		<dc:creator><![CDATA[Zoltan Hawryluk]]></dc:creator>
+		<pubDate>Thu, 04 Nov 2010 02:53:05 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.com/wp/?p=937#comment-15984</guid>
+		<description><![CDATA[Thanks for posting this!  Am quite interested in this work.  Did you get anyone to look further into the parser code?  If so, I would love to see.  If not, maybe I&#039;ll play with it a bit.  Would be great if we can get getters/setters to work across all browsers seamlessly :-D
+
+Z.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for posting this!  Am quite interested in this work.  Did you get anyone to look further into the parser code?  If so, I would love to see.  If not, maybe I&#8217;ll play with it a bit.  Would be great if we can get getters/setters to work across all browsers seamlessly <img src="http://localhost/wp/wp-includes/images/smilies/icon_biggrin.gif" alt=":-D" class="wp-smiley" /> </p>
+<p>Z.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: pBorky</title>
+		<link>http://localhost/wp/2010/02/experiment-cross-browser-javascript-getters-and-setters/comment-page-1/#comment-15965</link>
+		<dc:creator><![CDATA[pBorky]]></dc:creator>
+		<pubDate>Wed, 06 Oct 2010 13:27:32 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.com/wp/?p=937#comment-15965</guid>
+		<description><![CDATA[Hi!
+nice suggestion. I`m working on js framework that acts like standalone application and owns the DOM elements, and I`m using java-like notation of getters/setter, and methods to lookup native property or get set method. I try your paradigm , to inject original code , and I`ll send some updates. But .. I swear it is way to hell :)
+some minor tips:
+following foolproof code is to get source of function (I`m  using redeclaration of toString method ) :
+  var src = Function.prototype.toString.call(fn);
+code for getting newfunction from source (hopefully it works browser-wide) :
+  var newfunction = eval( &#039;(function() { return &#039;+ modified +&#039; })()&#039;);
+or to  just execute:
+  return eval( &#039;(&#039;+ modified +&#039; )()&#039;);
+somehow store injected functions in Map to avoid recompile each time.]]></description>
+		<content:encoded><![CDATA[<p>Hi!<br />
+nice suggestion. I`m working on js framework that acts like standalone application and owns the DOM elements, and I`m using java-like notation of getters/setter, and methods to lookup native property or get set method. I try your paradigm , to inject original code , and I`ll send some updates. But .. I swear it is way to hell <img src="http://localhost/wp/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /><br />
+some minor tips:<br />
+following foolproof code is to get source of function (I`m  using redeclaration of toString method ) :<br />
+  var src = Function.prototype.toString.call(fn);<br />
+code for getting newfunction from source (hopefully it works browser-wide) :<br />
+  var newfunction = eval( &#8216;(function() { return &#8216;+ modified +&#8217; })()&#8217;);<br />
+or to  just execute:<br />
+  return eval( &#8216;(&#8216;+ modified +&#8217; )()&#8217;);<br />
+somehow store injected functions in Map to avoid recompile each time.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

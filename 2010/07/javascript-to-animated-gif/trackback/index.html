@@ -1,0 +1,1211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<title>JavaScript &lt;canvas&gt; to (Animated) GIF &#8211; Blog</title>
+	
+	
+	
+	
+		<link rel='archives' title='May 2014' href='http://antimatter15.com/wp/2014/05/' />
+	<link rel='archives' title='April 2014' href='http://antimatter15.com/wp/2014/04/' />
+	<link rel='archives' title='March 2014' href='http://antimatter15.com/wp/2014/03/' />
+	<link rel='archives' title='February 2014' href='http://antimatter15.com/wp/2014/02/' />
+	<link rel='archives' title='January 2014' href='http://antimatter15.com/wp/2014/01/' />
+	<link rel='archives' title='December 2013' href='http://antimatter15.com/wp/2013/12/' />
+	<link rel='archives' title='November 2013' href='http://antimatter15.com/wp/2013/11/' />
+	<link rel='archives' title='October 2013' href='http://antimatter15.com/wp/2013/10/' />
+	<link rel='archives' title='September 2013' href='http://antimatter15.com/wp/2013/09/' />
+	<link rel='archives' title='August 2013' href='http://antimatter15.com/wp/2013/08/' />
+	<link rel='archives' title='July 2013' href='http://antimatter15.com/wp/2013/07/' />
+	<link rel='archives' title='June 2013' href='http://antimatter15.com/wp/2013/06/' />
+	<link rel='archives' title='May 2013' href='http://antimatter15.com/wp/2013/05/' />
+	<link rel='archives' title='April 2013' href='http://antimatter15.com/wp/2013/04/' />
+	<link rel='archives' title='March 2013' href='http://antimatter15.com/wp/2013/03/' />
+	<link rel='archives' title='February 2013' href='http://antimatter15.com/wp/2013/02/' />
+	<link rel='archives' title='January 2013' href='http://antimatter15.com/wp/2013/01/' />
+	<link rel='archives' title='December 2012' href='http://antimatter15.com/wp/2012/12/' />
+	<link rel='archives' title='November 2012' href='http://antimatter15.com/wp/2012/11/' />
+	<link rel='archives' title='October 2012' href='http://antimatter15.com/wp/2012/10/' />
+	<link rel='archives' title='September 2012' href='http://antimatter15.com/wp/2012/09/' />
+	<link rel='archives' title='August 2012' href='http://antimatter15.com/wp/2012/08/' />
+	<link rel='archives' title='July 2012' href='http://antimatter15.com/wp/2012/07/' />
+	<link rel='archives' title='June 2012' href='http://antimatter15.com/wp/2012/06/' />
+	<link rel='archives' title='May 2012' href='http://antimatter15.com/wp/2012/05/' />
+	<link rel='archives' title='April 2012' href='http://antimatter15.com/wp/2012/04/' />
+	<link rel='archives' title='March 2012' href='http://antimatter15.com/wp/2012/03/' />
+	<link rel='archives' title='February 2012' href='http://antimatter15.com/wp/2012/02/' />
+	<link rel='archives' title='January 2012' href='http://antimatter15.com/wp/2012/01/' />
+	<link rel='archives' title='December 2011' href='http://antimatter15.com/wp/2011/12/' />
+	<link rel='archives' title='November 2011' href='http://antimatter15.com/wp/2011/11/' />
+	<link rel='archives' title='October 2011' href='http://antimatter15.com/wp/2011/10/' />
+	<link rel='archives' title='September 2011' href='http://antimatter15.com/wp/2011/09/' />
+	<link rel='archives' title='August 2011' href='http://antimatter15.com/wp/2011/08/' />
+	<link rel='archives' title='July 2011' href='http://antimatter15.com/wp/2011/07/' />
+	<link rel='archives' title='June 2011' href='http://antimatter15.com/wp/2011/06/' />
+	<link rel='archives' title='May 2011' href='http://antimatter15.com/wp/2011/05/' />
+	<link rel='archives' title='April 2011' href='http://antimatter15.com/wp/2011/04/' />
+	<link rel='archives' title='March 2011' href='http://antimatter15.com/wp/2011/03/' />
+	<link rel='archives' title='February 2011' href='http://antimatter15.com/wp/2011/02/' />
+	<link rel='archives' title='January 2011' href='http://antimatter15.com/wp/2011/01/' />
+	<link rel='archives' title='December 2010' href='http://antimatter15.com/wp/2010/12/' />
+	<link rel='archives' title='November 2010' href='http://antimatter15.com/wp/2010/11/' />
+	<link rel='archives' title='October 2010' href='http://antimatter15.com/wp/2010/10/' />
+	<link rel='archives' title='September 2010' href='http://antimatter15.com/wp/2010/09/' />
+	<link rel='archives' title='August 2010' href='http://antimatter15.com/wp/2010/08/' />
+	<link rel='archives' title='July 2010' href='http://antimatter15.com/wp/2010/07/' />
+	<link rel='archives' title='June 2010' href='http://antimatter15.com/wp/2010/06/' />
+	<link rel='archives' title='May 2010' href='http://antimatter15.com/wp/2010/05/' />
+	<link rel='archives' title='April 2010' href='http://antimatter15.com/wp/2010/04/' />
+	<link rel='archives' title='March 2010' href='http://antimatter15.com/wp/2010/03/' />
+	<link rel='archives' title='February 2010' href='http://antimatter15.com/wp/2010/02/' />
+	<link rel='archives' title='January 2010' href='http://antimatter15.com/wp/2010/01/' />
+	<link rel='archives' title='December 2009' href='http://antimatter15.com/wp/2009/12/' />
+	<link rel='archives' title='November 2009' href='http://antimatter15.com/wp/2009/11/' />
+	<link rel='archives' title='October 2009' href='http://antimatter15.com/wp/2009/10/' />
+	<link rel='archives' title='September 2009' href='http://antimatter15.com/wp/2009/09/' />
+	<link rel='archives' title='August 2009' href='http://antimatter15.com/wp/2009/08/' />
+	<link rel='archives' title='July 2009' href='http://antimatter15.com/wp/2009/07/' />
+	<link rel='archives' title='June 2009' href='http://antimatter15.com/wp/2009/06/' />
+	<link rel='archives' title='May 2009' href='http://antimatter15.com/wp/2009/05/' />
+	<link rel='archives' title='April 2009' href='http://antimatter15.com/wp/2009/04/' />
+	<link rel='archives' title='March 2009' href='http://antimatter15.com/wp/2009/03/' />
+	<link rel='archives' title='January 2009' href='http://antimatter15.com/wp/2009/01/' />
+	<link rel='archives' title='December 2008' href='http://antimatter15.com/wp/2008/12/' />
+	<link rel='archives' title='November 2008' href='http://antimatter15.com/wp/2008/11/' />
+	<link rel='archives' title='October 2008' href='http://antimatter15.com/wp/2008/10/' />
+	<link rel='archives' title='September 2008' href='http://antimatter15.com/wp/2008/09/' />
+	<link rel='archives' title='August 2008' href='http://antimatter15.com/wp/2008/08/' />
+	<link rel='archives' title='July 2008' href='http://antimatter15.com/wp/2008/07/' />
+	<link rel='archives' title='June 2008' href='http://antimatter15.com/wp/2008/06/' />
+	<link rel='archives' title='May 2008' href='http://antimatter15.com/wp/2008/05/' />
+	<link rel='archives' title='April 2008' href='http://antimatter15.com/wp/2008/04/' />
+	<link rel='archives' title='March 2008' href='http://antimatter15.com/wp/2008/03/' />
+	<link rel='archives' title='February 2008' href='http://antimatter15.com/wp/2008/02/' />
+	<link rel='archives' title='January 2008' href='http://antimatter15.com/wp/2008/01/' />
+	<link rel='archives' title='December 2007' href='http://antimatter15.com/wp/2007/12/' />
+	<link rel='archives' title='November 2007' href='http://antimatter15.com/wp/2007/11/' />
+	<link rel='archives' title='October 2007' href='http://antimatter15.com/wp/2007/10/' />
+	<link rel='archives' title='September 2007' href='http://antimatter15.com/wp/2007/09/' />
+	<link rel='archives' title='August 2007' href='http://antimatter15.com/wp/2007/08/' />
+	<link rel='archives' title='May 2007' href='http://antimatter15.com/wp/2007/05/' />
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://antimatter15.com/wp/wp-content/themes/carrington-woot/css/css.css" />
+
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="http://antimatter15.com/wp/wp-content/themes/carrington-woot/css/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="http://antimatter15.com/wp/wp-content/themes/carrington-woot/css/ie6.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="http://antimatter15.com/wp/wp-content/themes/carrington-woot/js/DD_belatedPNG.js"></script>
+		<script type="text/javascript">
+			DD_belatedPNG.fix('img, #header, #footer, #header .wrapper, #footer .wrapper, #TB_title, #developer-link a');
+		</script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+	window.google_analytics_uacct = "UA-1367972-3";
+</script>
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1367972-3']);
+				</script><script src="http://antimatter15.com/wp/wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			
+<script type='text/javascript' src='http://antimatter15.com/wp/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://antimatter15.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://antimatter15.com/wp/wp-content/themes/carrington-woot/js/carrington.js?ver=1.0'></script>
+
+ 
+
+<link rel='next' title='jailbreakme.com' href='http://antimatter15.com/wp/2010/08/jailbreakme-com/' />
+
+<link rel='canonical' href='http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/' />
+<link rel='shortlink' href='http://antimatter15.com/wp/?p=1202' />
+
+<script type="text/javascript">
+var CFCT_URL = "http://antimatter15.com/wp";
+var CFCT_AJAX_LOAD = true;
+</script>
+	<style type="text/css">
+#header {
+	background-color: #38404e;
+	color: #cecfd1;
+}
+#header a,
+#header a:visited {
+	color: #ffffff;
+}
+#sub-header,
+.nav ul{
+	background-color: #e9eaea;
+	color: #51555c;
+}
+#sub-header a,
+#sub-header a:visited,
+.nav li li a,
+.nav li li a:visited {
+	color: #416892 !important;
+}
+h1,
+h1 a,
+h1 a:hover,
+h1 a:visited {
+	color: #51555c;
+}
+h2,
+h2 a,
+h2 a:hover,
+h2 a:visited {
+	color: #51555c;
+}
+a,
+a:hover,
+a:visited {
+	color: #416892;
+}
+.hentry .edit,
+.hentry .edit a,
+.hentry .edit a:visited,
+.hentry .edit a:hover,
+.comment-reply-link,
+.comment-reply-link:visited,
+.comment-reply-link:hover {
+	background-color: #416892;
+}
+#footer {
+	background-color: #51555c;
+	color: #999999;
+}
+#footer a,
+#footer a:visited {
+	color: #CECFD1;
+}
+#footer p#developer-link a,
+#footer p#developer-link a:visited {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/footer/by-crowd-favorite-light.png);
+}
+#header {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/header/gradient-dark.png);
+}
+#header .wrapper {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/header/texture-light.png);
+}
+#footer {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/footer/gradient-light.png);
+}
+</style>
+</head>
+
+<body>
+	<div id="page">
+		<div id="top"><a class="accessibility" href="#content">Skip to content</a></div>
+		<hr class="lofi" />
+		<div id="header" class="section">
+			<div class="wrapper">
+				<strong id="blog-title"><a href="http://antimatter15.com/wp/" rel="home">Blog</a></strong>
+				<p id="blog-description">this title probably isn&#039;t very original</p>
+		
+
+						 		<div id="navigation">
+					<ul class="nav clearfix">
+												<li id="menu-item-1820" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1820"><a href="http://antimatter15.com/wp/" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://antimatter15.com']);">Blog</a></li>
+<li id="menu-item-1819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1819"><a href="http://antimatter15.com/wp/about/" >About</a></li>
+<li id="menu-item-1821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1821"><a href="http://antimatter15.com/wp/projects/" >Projects</a></li>
+<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="http://antimatter15.com/wp/ajax-animator/" >Ajax Animator</a></li>
+						<li class="secondary search">
+<form method="get" id="cfct-search" action="http://antimatter15.com/wp/" onsubmit="location.href=this.action+'search/'+encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;">
+	<div>
+		<input type="text" id="cfct-search-input" name="s" value="" size="15" />
+		<input type="submit" name="submit_button" value="Search" />
+	</div>
+</form></li>
+					</ul>
+				</div><!-- #navigation -->
+			</div><!-- .wrapper -->
+		</div><!-- #header -->
+
+		<hr class="lofi" />
+		<div id="main" class="section">
+			<div class="wrapper">
+
+<div id="content">
+<div id="post-content-1202" class="post-1202 post type-post status-publish format-standard hentry category-ajaxanimator category-animated-gif-encoder category-codecs category-stick-figures tag-actionscript tag-as3gif tag-documentation tag-flash tag-gif tag-gifencoder tag-github tag-glif tag-javascript full">
+	
+	<h1 class="entry-title full-title"><a href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/" title="Permanent link to JavaScript &lt;canvas&gt; to (Animated) GIF" rel="bookmark" rev="post-1202">JavaScript &lt;canvas&gt; to (Animated) GIF</a></h1>
+	
+	<div class="entry-content full-content">
+<p><img class="alignright" src="http://github.com/antimatter15/jsgif/raw/master/Demos/converted_animation.gif" alt="This is the GIF which was generated from the canvas." width="300" height="150" /></p>
+<p><img src="http://github.com/antimatter15/jsgif/raw/master/Demos/raw_canvas.png" alt="This is the raw canvas element saved as a non-animated PNG" /></p>
+<p>I&#8217;ve <a href="2009/08/webworkers-canvas-glif-gifencoder-client-side-animated-gif-generation/">tried this before</a> but it didn&#8217;t work. &lt;canvas&gt; can&#8217;t do toDataURL(&#8216;image/gif&#8217;), and the primitive GLIF library couldn&#8217;t do much so I never had the opportunity to test my gif-merging code that I had. But I&#8217;m at it again, this time, porting it from the AS3GIF library, an awesomely comprehensive bitmap to binary gif encoder that even supports LZW compression (and the patent has luckily expired. Yay!). AS3Gif is supposed to &#8220;play and encode animated GIFs&#8221;, but since web pages can usually natively play GIFs fine, it&#8217;s only a port of the GIFEncoder portions of the library. And it works really well. The rest of this post is copied from the<a href="http://github.com/antimatter15/jsgif" > Github readme</a>. Interesting how the w2_embed/anonybot embed post was a blog post turned into readme, this is a readme turned into blogpost. I&#8217;ll start with a link to the Github repo anyway:</p>
+<p><a href="http://github.com/antimatter15/jsgif" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);">http://github.com/antimatter15/jsgif</a></p>
+<h3>Basic Usage</h3>
+<p>Since it pretty much <em>is</em> GIFEncoder, you could consult the <a href="http://code.google.com/p/as3gif/wiki/How_to_use#The_GIFEncoder" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://code.google.com']);">as3gif how-to page</a></p>
+<p>But there are some differences so I&#8217;ll cover it here anyway.<img class="alignright" src="http://github.com/antimatter15/jsgif/raw/master/Demos/clock.gif" alt="This is the GIF which was generated from the canvas." width="150" height="150" /></p>
+<p>You first need to include the JS files. It&#8217;s probably best if you include it in this order, but it shouldnt&#8217; matter too much.</p>
+<pre><code>&lt;script type="text/javascript" src="LZWEncoder.js"&gt;&lt;/script&gt; &lt;script type="text/javascript" src="NeuQuant.js"&gt;&lt;/script&gt; &lt;script type="text/javascript" src="GIFEncoder.js"&gt;&lt;/script&gt; </code></pre>
+<p>If you want to render the gif through an inline <code>&lt;img&gt;</code> tag or try to save to disk or send to server or anything that requires<br />
+conversion into a non-binary string form, you should probably include <code>b64.js</code> too.</p>
+<pre><code>&lt;script type="text/javascript" src="b64.js"&gt;&lt;/script&gt; </code></pre>
+<p>Simple enough right? Now to convert stuff to GIF, you need to have a working or at least some imageData-esque array.</p>
+<pre><code>&lt;canvas id="bitmap"&gt;&lt;/canvas&gt; &lt;script&gt; var canvas = document.getElementById('bitmap'); var context = canvas.getContext('2d'); context.fillStyle = 'rgb(255,255,255)'; context.fillRect(0,0,canvas.width, canvas.height); //GIF can't do transparent so do white context.fillStyle = "rgb(200,0,0)"; context.fillRect (10, 10, 75, 50); //draw a little red box </code></pre>
+<p>Now we need to init the GIFEncoder.</p>
+<pre><code> var encoder = new GIFEncoder(); </code></pre>
+<p><em>If</em> you are making an animated gif, you need to add the following</p>
+<pre><code> encoder.setRepeat(0); //0 -&gt; loop forever //1+ -&gt; loop n times then stop encoder.setDelay(500); //go to next frame every n milliseconds </code></pre>
+<p>Now, you need to tell the magical thing that you&#8217;re gonna start inserting frames (even if it&#8217;s only one).</p>
+<pre><code> encoder.start(); </code></pre>
+<p>And for the part that took the longest to port: adding a real frame.</p>
+<pre><code> encoder.addFrame(context); </code></pre>
+<p>In the GIFEncoder version, it accepts a Bitmap. Well, that doesn&#8217;t exist in Javascript (natively, anyway) so instead, I use what I feel is a decent analogue: the canvas context. However, if you&#8217;re in a situation where you don&#8217;t have a real <code>&lt;canvas&gt;</code> element. That&#8217;s <em>okay</em>. You can set the second parameter to true and pass a imageData.data-esque array as your first argument. So in other words, you can do <code>encoder.addFrame(fake_imageData, true) </code>as an alternative. However, you <em>must</em> do an <code>encoder.setSize(width, height);</code> before you do any of the addFrames if you pass a imageData.data-like array. If you pass a canvas context, then that&#8217;s all okay, because it will automagically do a setSize with the canvas width/height stuff.</p>
+<p>Now the last part is to finalize the animation and get it for display.</p>
+<pre><code> encoder.finish(); var binary_gif = encoder.stream().getData() //notice this is different from the as3gif package! var data_url = 'data:image/gif;base64,'+encode64(binary_gif); </code></pre>
+<h3>Docs</h3>
+<p>Each of the files exposes a single global (see, at least it&#8217;s considerate!). But since there&#8217;s three files, that means that there&#8217;s three globals. But two of them are more of supporting libraries that I don&#8217;t totally understand or care about enough to document. So I&#8217;m just gonna document GIFEncoder.</p>
+<p><code>new GIFEncoder()</code> This is super parent function. You really don&#8217;t need the <code>new</code> keyword because It&#8217;s not really even using any special inheritance pattern. It&#8217;s a closure that does some <code>var blah = exports.blah = function blah(){</code> for no good reason. Anyway, it returns an object with a bunch of methods that the section will be devoted to documenting. Note that I&#8217;ve never tested more than half of these, so good luck.</p>
+<p><code>Boolean start()</code> This writes the GIF Header and returns <code>false</code> if it fails.</p>
+<p><code>Boolean addFrame(CanvasRenderingContext2D context)</code> This is the magical magic behind everything. This adds a frame.</p>
+<p><code>Boolean addFrame(CanvasPixelArray image, true)</code> This is the magical magic behind everything. This adds a frame. This time you need<br />
+you pass <code>true</code> as the second argument and then magic strikes and it loads your canvas pixel array (which can be a real array, I dont care and I think the program has learned from my constant apathy to also not care). But note that if you do, you must first manually call<br />
+<code>setSize</code> which is happily defined just below this one.</p>
+<p><code>void setSize(width, height)</code> Sets the canvas size. It&#8217;s supposed to be private, but I&#8217;m exposing it anyway. Gets called automagically as the size of the first frame if you don&#8217;t do that crappy hacky imageData.data hack.</p>
+<p><code>void setDelay(int milliseconds)</code> the number of milliseconds to wait on each frame</p>
+<p><code>void setDispose(int code)</code> Sets the GIF frame disposal code for the last added frame and any subsequent frames. Default is 0 if no transparent color has been set, otherwise 2. I have no clue what this means so I just copypasted<br />
+it from the actionscript docs.</p>
+<p><code>void setFrameRate(Number fps)</code> Sets frame rate in frames per second. Equivalent to <code>setDelay(1000/fps)</code>. I think that&#8217;s stupid.</p>
+<p><code>void setQuality(int quality)</code> Sets quality of color quantization (conversion of images to the maximum 256 colors allowed by the GIF specification). Lower values (minimum = 1) produce better colors, but slow processing significantly. 10 is the default, and produces good color mapping at reasonable speeds. Values greater than 20 do not yield significant improvements in speed. BLAH BLAH BLAH. Whatever</p>
+<p><code>void setRepeat(int iter)</code> Sets the number of times the set of GIF frames should be played. Default is 1; 0 means play indefinitely. Must be invoked before the first image is added.</p>
+<p><code>void setTransparent(Number color)</code> Sets the transparent color for the last added frame and any subsequent frames. Since all colors are subject to modification in the quantization process, the color in the final palette for each frame closest to the given color becomes the transparent color for that frame. May be set to null to indicate no transparent color.</p>
+<p><code>ByteArray finish()</code> Adds final trailer to the GIF stream, if you don&#8217;t call the finish method the GIF stream will not be valid.</p>
+<p><code>String stream()</code> Yay the only function that returns a non void/boolean. It&#8217;s the magical stream function which should have been a getter which JS does support but I didnt&#8217; feel like making it a getter because getters are so weird and inconsistent. Like sure there&#8217;s the nice pretty <code>get</code> thing but I think IE9/8 doesn&#8217;t implement it because it&#8217;s non standard or something and replaced it with a hideously ugly blah blah. So Anyway, it&#8217;s a function. It returns a byteArray with three writeByte functions that you wouldn&#8217;t care about and a <code>getData()</code> function which returns a binary string with the GIF. There&#8217;s also a <code>.bin</code> attribute which contains an array with the binary stuff that I don&#8217;t care about.</p>
+<h3>WebWorkers</h3>
+<p>The process isn&#8217;t really the fastest thing ever, so you should use WebWorkers for piecing together animations more than a few frames long. You can find the rest of the WebWorkers section on the actual readme, because the rest is just a huge block of code with comments.</p>
+<p><a href="http://github.com/antimatter15/jsgif" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);">http://github.com/antimatter15/jsgif</a></p>
+		<div class="clear"></div>
+	</div><!-- .entry-content-->
+	
+	<p class="filed categories alt-font tight">Posted in <a href="http://antimatter15.com/wp/category/ajaxanimator/" title="View all posts in Ajax Animator" rel="category tag">Ajax Animator</a>, <a href="http://antimatter15.com/wp/category/codecs/animated-gif-encoder/" title="View all posts in Animated GIF Encoder" rel="category tag">Animated GIF Encoder</a>, <a href="http://antimatter15.com/wp/category/codecs/" title="View all posts in Multimedia Codecs" rel="category tag">Multimedia Codecs</a>, <a href="http://antimatter15.com/wp/category/ajaxanimator/stick-figures/" title="View all posts in Stick Figures" rel="category tag">Stick Figures</a>.</p>
+	<p class="filed tags alt-font tight">Tagged with <a href="http://antimatter15.com/wp/tag/actionscript/" rel="tag">actionscript</a>, <a href="http://antimatter15.com/wp/tag/as3gif/" rel="tag">as3gif</a>, <a href="http://antimatter15.com/wp/tag/documentation/" rel="tag">documentation</a>, <a href="http://antimatter15.com/wp/tag/flash/" rel="tag">flash</a>, <a href="http://antimatter15.com/wp/tag/gif/" rel="tag">gif</a>, <a href="http://antimatter15.com/wp/tag/gifencoder/" rel="tag">gifencoder</a>, <a href="http://antimatter15.com/wp/tag/github/" rel="tag">github</a>, <a href="http://antimatter15.com/wp/tag/glif/" rel="tag">glif</a>, <a href="http://antimatter15.com/wp/tag/javascript/" rel="tag">javascript</a>.</p>
+	<p class="comments-link"><a href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comments" rev="post-1202"  title="Comment on JavaScript &lt;canvas&gt; to (Animated) GIF">22 comments</a></p>
+
+	<p class="by-line">
+		<span class="author vcard full-author">
+			<span class="by alt-font">By</span> <a class="url fn" href="http://antimatter15.com/wp/author/admin/" title="View all posts by admin">admin</a>		</span>
+		<span class="date full-date"><span class="ndash alt-font">&ndash;</span> <abbr class="published" title="2010-07-23T17:19">July 23, 2010</abbr></span>
+	</p><!--/by-line-->
+
+	<div id="post-comments-1202-target"></div>
+	<div class="clear"></div>
+	
+	</div><!-- .post -->	<div id="comments">
+
+<div class="rule-major"><hr /></div>
+
+<h2 class="h1 comments-title">22 Responses</h2>
+
+<p>Stay in touch with the conversation, subscribe to the <a class="feed" rel="alternate" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/feed/"><acronym title="Really Simple Syndication">RSS</acronym> feed for comments on this post</a>.</p>
+
+	<ol class="commentlist hfeed">
+
+<li class="li-comment" id="li-comment-15941">
+	<div class="div-comment" id="div-comment-15941">
+
+<div id="comment-15941" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/9a02d15fb564e546f4b772f89afd96c9?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://puremango.co.uk" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://puremango.co.uk']);"  rel='external nofollow' class='url'>Howard Yeend</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Very nice. Do you know of a way to split an animated gif into individual frames using js and canvas? Or a way to step through gifs in JS?</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2010-07-27T08:12">July 27, 2010, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-15941">8:12 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-15942">
+	<div class="div-comment" id="div-comment-15942">
+
+<div id="comment-15942" class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/cdea44b85ae2242dcccd758cd80aad6b?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">admin</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>You should look at the spec. I think you would just split by blocks and add the header to each one.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2010-07-27T09:55">July 27, 2010, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-15942">9:55 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-23763">
+	<div class="div-comment" id="div-comment-23763">
+
+<div id="comment-23763" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/383ec2b72d0ada60fd2757ceca23fef7?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://bitcrush.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://bitcrush.org']);"  rel='external nofollow' class='url'>Robin Hayes</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>This works really well, but I&#8217;ve come across a problem.<br />
+I&#8217;m trying to export a two-frame gif, which has 50 colours total; no colours change between the two frames. However, even with setQuality(1), the colours are reduced to 34, and are different on each frame. Adding more setQuality()s, between frames, has no effect on the second frame. I&#8217;m working with pixel art, so getting the colours right matters a lot.</p>
+<p>Is there a way to bypass the quality filter entirely? Thanks a lot.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2011-06-05T10:23">June 5, 2011, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-23763">10:23 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-36475">
+	<div class="div-comment" id="div-comment-36475">
+
+<div id="comment-36475" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/40a5769da6d979c1ebc47cdec887f24a?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://forresto.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://forresto.com']);"  rel='external nofollow' class='url'>Forrest O.</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Has anybody figured out how to get transparency working? Every 10th frame or so it seems to work. There might be something that didn&#8217;t translate right in findClosest()</p>
+<p>My use: <a href="http://meemoo.org/iframework/#/example/flipbook" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','http://meemoo.org']);" rel="nofollow">http://meemoo.org/iframework/#/example/flipbook</a></p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2012-01-31T06:45">January 31, 2012, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-36475">6:45 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-106145">
+	<div class="div-comment" id="div-comment-106145">
+
+<div id="comment-106145" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/1e6fa0f8ec2cdc347085c92846a8be79?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">pingu7</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Hi.  Thanks for sharing this.  I used it on a little project here: <a href="http://loadersuite.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','http://loadersuite.com']);" rel="nofollow">http://loadersuite.com/</a> and I meant to come back and offer a fix.</p>
+<p>In NewQuant.js, try commenting out transIndex = findClosest(transparent); and replace with:</p>
+<p>transIndex=nq.map(transparent[0]&amp;255,transparent[1]&amp;255,transparent[2]&amp;255)}</p>
+<p>Set the transparency colour with something like: encoder.setTransparent([0xEF,0xEF,0xEF]).  That seemed to do the trick for me.</p>
+<p>Thanks again</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-04-28T04:11">April 28, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-106145">4:11 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-106146">
+	<div class="div-comment" id="div-comment-106146">
+
+<div id="comment-106146" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/1e6fa0f8ec2cdc347085c92846a8be79?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">pingu7</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>*Sorry, in GIFEncoder.js, I meant to say</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-04-28T04:14">April 28, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-106146">4:14 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-108319">
+	<div class="div-comment" id="div-comment-108319">
+
+<div id="comment-108319" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/f0139dbf99d5fa8aaa969a77b06ad9a7?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://meemoo.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://meemoo.org']);"  rel='external nofollow' class='url'>Forrest Oliphant</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>This patch should fix the color/size issue: <a href="https://github.com/antimatter15/jsgif/pull/8/files" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','http://github.com']);" rel="nofollow">https://github.com/antimatter15/jsgif/pull/8/files</a></p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-05-12T04:53">May 12, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-108319">4:53 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-112262">
+	<div class="div-comment" id="div-comment-112262">
+
+<div id="comment-112262" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' /></span>
+<cite class="fn">Anonymous</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>fdsdsfdfd</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-06-05T01:30">June 5, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-112262">1:30 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-113027">
+	<div class="div-comment" id="div-comment-113027">
+
+<div id="comment-113027" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/923d10bc97028030e8e67e7db62658d1?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">ptk</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>hi,<br />
+I&#8217;ve been researching the options available for client side animated GIFs and I must say that I overlooked this one because of how terribly complicated you made it sound on this page and I was under the impression that this library was not able to control the speed of the frames (both by your animated GIF examples and it not being mentioned anywhere)</p>
+<p>as it turns out, I was pleasently surprised  that this was one of the easier solutions I tried.  I think it might benefit your library if you gave the readme a slight overhaul with an overview of functions so that people may be more inclined to adopt this useful utility.  just a thought.   thanks.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-06-10T12:13">June 10, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-113027">12:13 pm</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-115163">
+	<div class="div-comment" id="div-comment-115163">
+
+<div id="comment-115163" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/4480cf3504f30af1ec0386b17995c7f9?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">George</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Hi there, I&#8217;m trying to get this image in my canvas to export to the gif, Please take a look at my code at <a href="http://www.anythoughts.net/gifgo/jsgif-master/Demos/test.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','http://www.anythoughts.net']);" rel="nofollow">http://www.anythoughts.net/gifgo/jsgif-master/Demos/test.html</a> and see what the problem is. Thanks.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-06-22T08:46">June 22, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-115163">8:46 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-115936">
+	<div class="div-comment" id="div-comment-115936">
+
+<div id="comment-115936" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/7f01743e24e94a4bfe007c57079b21e7?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">Jesse Chisholm</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>George, I believe the problem is that your script calls context.finish() before the imageObj.onload gets called.  So it is too late to inject the pattern frame.</p>
+<p>Try putting all of the finish stuff in the imageObj.onload method.  I.e., onload adds the pattern, then adds the &#8220;Zibri&#8221; then finishes, then sets the display image.src.</p>
+<p>CAVEAT: I have not tried this, just looking at timing of code execution.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-06-26T09:50">June 26, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-115936">9:50 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-115938">
+	<div class="div-comment" id="div-comment-115938">
+
+<div id="comment-115938" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/7f01743e24e94a4bfe007c57079b21e7?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">Jesse Chisholm</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>PS: I&#8217;ve tried it now, and it works.</p>
+<p>Sorta.</p>
+<p>The &#8220;Zibri&#8221; shows up in imageObj, which I didn&#8217;t expect.<br />
+You will need to do more code juggling to avoid actually displaying imageObj.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2013-06-26T09:59">June 26, 2013, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-115938">9:59 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-254342">
+	<div class="div-comment" id="div-comment-254342">
+
+<div id="comment-254342" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/ef1db9b3bdab4a153fca0482cb769ec0?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://flipbox.in/?portfolio-category=jabong" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://flipbox.in']);"  rel='external nofollow' class='url'>shopping online</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Wonderful conquer! I have to newbie as you fix your internet site, the best way could possibly my spouse and i sign up to for any blog site site? The particular bank account taught me to be a new appropriate package. I had been a small amount knowledgeable of your your over the air supplied sparkly see-through idea</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-01-18T13:51">January 18, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-254342">1:51 pm</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-259434">
+	<div class="div-comment" id="div-comment-259434">
+
+<div id="comment-259434" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/5ea37745aca00517a5f997009b430263?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://t.co/v1wWNmiE5i" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://t.co']);"  rel='external nofollow' class='url'>Garage Remodeling</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>This is certainly a smart way to remain organized.<br />
+I understand my garage and also basement are really a mess.<br />
+I in the morning certainly devoloping on making anything similar to this.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-02-05T13:37">February 5, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-259434">1:37 pm</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-259556">
+	<div class="div-comment" id="div-comment-259556">
+
+<div id="comment-259556" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/c2af49d3bb9d4d9c263be0c907fe17fc?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://pinterest.com/pin/243687029807685917/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://pinterest.com']);"  rel='external nofollow' class='url'>http://pinterest.com/</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Water with a Homemade ND Filter</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-02-05T23:59">February 5, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-259556">11:59 pm</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-260329">
+	<div class="div-comment" id="div-comment-260329">
+
+<div id="comment-260329" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/cd7574faca1c550c84bcd255247f5ea4?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="https://plus.google.com/102603564838005736769/posts/KrhZBi9PPxq"   rel='external nofollow' class='url'>https://plus.google.com/</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Which things occurs all of the the time. Those are really things that go bad real swiftly<br />
+when it isn&#8217;t performing properly.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-02-09T01:16">February 9, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-260329">1:16 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-260482">
+	<div class="div-comment" id="div-comment-260482">
+
+<div id="comment-260482" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/efe0e9c92f512511bf2f8dcb5ebe7325?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://youtu.be/xS9uFrJhChU" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://youtu.be']);"  rel='external nofollow' class='url'>free project tv</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Online television is definitely the wave of the future.<br />
+As broadband speeds get faster, people will be watching<br />
+their shows on sites like this.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-02-09T10:12">February 9, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-260482">10:12 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-260761">
+	<div class="div-comment" id="div-comment-260761">
+
+<div id="comment-260761" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/2bec70118bc31574425c7f47f03992b9?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://www.flickr.com/photos/94159550@N07/12387020755/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.flickr.com']);"  rel='external nofollow' class='url'>Fredericka</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Away door i similar to this tool. However around time it&#8217;s launched<br />
+to wear down. I did discover a way to shock the cells backside,<br />
+good since new.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-02-10T04:57">February 10, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-260761">4:57 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-260880">
+	<div class="div-comment" id="div-comment-260880">
+
+<div id="comment-260880" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/ed1fa7376a5e0b42bc15993588b30bbe?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn">Noel Whitemore</cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>An easy way to grab frames from canvas animations is to use the JavaScript console built into your browser. There is an article on Stack Overflow titled &#8220;grabbing-each-frame-of-an-html5-canvas&#8221; that demonstrates how to do this, but the basic principle is that the toDataURL() method allows you to access a single instance of the canvas image and this can then be written back to the browser as an image. To capture a complete sequence, the SetInterval() method can be used.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-02-10T15:33">February 10, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-260880">3:33 pm</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-289095">
+	<div class="div-comment" id="div-comment-289095">
+
+<div id="comment-289095" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/a3218684f000571048199b56e9ba01ae?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://kiddstock.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://kiddstock.com']);"  rel='external nofollow' class='url'>Shonda</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>First of all I would like to say excellent<br />
+blog! I had a quick question that I&#8217;d like to ask if you do not mind.<br />
+I was interested to find out how you center yourself and clear your head<br />
+prior to writing. I&#8217;ve had difficulty clearing my thoughts in getting my thoughts out.<br />
+I do take pleasure in writing but it just seems like the<br />
+first 10 to 15 minutes are generally lost just trying to figure<br />
+out how to begin. Any ideas or hints? Thanks!</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-04-14T23:01">April 14, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-289095">11:01 pm</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-289607">
+	<div class="div-comment" id="div-comment-289607">
+
+<div id="comment-289607" class="comment even thread-even depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://1.gravatar.com/avatar/fc21dfb244744a8c391d7eb59610c113?s=48&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://www.bowtiesneckties.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.bowtiesneckties.com']);"  rel='external nofollow' class='url'>http://www.bowtiesneckties.com</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>I&#8217;m truly enjoying the design and layout of your site. It&#8217;s a very easy on the eyes which makes it much<br />
+more pleasant for me to come here and visit more often.<br />
+Did you hire out a developer to create your theme?<br />
+Exceptional work!</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-04-15T11:14">April 15, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-289607">11:14 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+
+<li class="li-comment" id="li-comment-323946">
+	<div class="div-comment" id="div-comment-323946">
+
+<div id="comment-323946" class="comment odd alt thread-odd thread-alt depth-1 hentry">
+	<address class="vcard author entry-title comment-author">
+		<span class="photo avatar"><img alt='' src='http://0.gravatar.com/avatar/27ad0afeab0e11ed9ba51fe849c7dacf?s=48&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&amp;r=PG' class='avatar avatar-48 photo' height='48' width='48' /></span>
+<cite class="fn"><a href="http://www.nexopia.com/users/groovyplas913/blog/8-led-tv-buzzlecom" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.nexopia.com']);"  rel='external nofollow' class='url'>cost of advertising on tv</a></cite> <span class="says">says</span>	</address><!--.vcard-->
+
+	<div class="entry-content comment-content">
+<p>Hello there! I just would like to give yyou a huge thumbs up for the great info you have got here on thjis post.<br />
+I am coming back to your web site ffor more soon.</p>
+	</div><!--.entry-content-->
+	<div class="clear"></div>
+	<div class="comment-meta commentmetadata small">
+		<span class="date comment-date">
+			<abbr class="published" title="2014-05-25T05:13">May 25, 2014, <a title="Permanent link to this comment" rel="bookmark" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/#comment-323946">5:13 am</a></abbr>
+		</span><!--.date-->
+	</div>
+</div><!--.comment-->	</div>
+</li><!-- #comment-## -->
+	</ol>
+	
+<p class="comment-pagination"></p>
+<div id="respond-p1202">
+	<form action="http://antimatter15.com/wp/wp-comments-post.php" method="post" class="comment-form">
+		<p class="comment-form-comment tight">
+		<label class="h3" for="comment-p1202">Leave a Reply <em id="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link-p1202" href="/wp/2010/07/javascript-to-animated-gif/#respond-p1202" style="display:none;">Cancel</a></em></label>
+			<br class="lofi" />
+			<span class="comment-form-comment-area">
+				<textarea id="comment-p1202" name="comment" rows="8" cols="40"></textarea><br />
+				<em class="some-html-is-ok"><abbr title="You can use: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; ">Some HTML is OK</abbr></em>
+			</span>
+		</p>
+		<p class="comment-form-user-info tight">
+			<input type="text" id="author-p1202" name="author" value="" size="22" />
+			<label for="author-p1202">Name</label>
+		</p><!--/name-->
+		<p class="comment-form-user-info tight">
+			<input type="text" id="email-p1202" name="email" value="" size="22" />
+			<label for="email-p1202">Email  <em>(never shared)</em></label>
+		</p><!--/email-->
+		<p class="comment-form-user-info tight">
+			<input type="text" id="url-p1202" name="url" value="" size="22" />
+			<label title="Your website address" for="url-p1202">Web</label>
+		</p><!--/url-->
+		<p class="tight">
+			<input name="submit" type="submit" value="Post comment" />
+			<span class="comment-form-trackback">or, reply to this post via <a rel="trackback" href="http://antimatter15.com/wp/2010/07/javascript-to-animated-gif/trackback/">trackback</a>.</span>
+		</p>
+<input type='hidden' name='comment_post_ID' value='1202' id='comment_post_ID_p1202' />
+<input type='hidden' name='comment_parent' id='comment_parent_p1202' value='0' />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="567ce75e9d" /></p><script type='text/javascript' src='http://antimatter15.com/wp/wp-content/plugins/akismet/_inc/form.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="207"/></p>	</form>
+</div>
+	</div><!--#comments-->
+
+	<div class="pagination-single">
+		<span class="previous">&laquo; <a href="http://antimatter15.com/wp/2010/07/experiment-ruby-style-function-auto-calling-in-javascript/" rel="prev">Experiment: Ruby-style function auto-calling in Javascript</a></span>
+		<span class="next"><a href="http://antimatter15.com/wp/2010/08/jailbreakme-com/" rel="next">jailbreakme.com</a> &raquo;</span>
+	</div>
+
+</div><!--#content-->
+
+<hr class="lofi" />
+<div id="sidebar">
+	<div id="rssfeeds" style="background: transparent url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/rss.gif) no-repeat scroll left center;padding-left: 18px;margin-bottom:18px">RSS: <a href="http://antimatter15.com/wp/feed/">Entries</a> | <a href="http://antimatter15.com/wp/comments/feed/">Comments</a></div>
+	<div id="carrington-about" class="widget">
+		<div class="about">
+			<h2 class="widget-title">About</h2>
+I&#8217;m really not that interesting. This blog is just a place where I talk about random ideas or projects like just about everyone else. I&#8217;ve never really been into talking about myself, rather just the stuff I do or think. I may be somewhat paranoid, or whatever.  I think I&#8217;m an INTP but I&#8217;m not [&hellip;]<a class="more" href="http://antimatter15.com/wp/about/">more &rarr;</a>		</div>
+	</div><!--.widget-->
+
+	<div id="primary-sidebar">
+<div id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-312"><a href="http://antimatter15.com/wp/category/3d/" title="View all posts filed under 3D">3D</a>
+<ul class='children'>
+	<li class="cat-item cat-item-836"><a href="http://antimatter15.com/wp/category/3d/additive-3d-glasses/" title="View all posts filed under Additive 3D Glasses">Additive 3D Glasses</a>
+</li>
+	<li class="cat-item cat-item-823"><a href="http://antimatter15.com/wp/category/3d/digital-sculpting-3d/" title="View all posts filed under Digital Sculpting">Digital Sculpting</a>
+</li>
+	<li class="cat-item cat-item-832"><a href="http://antimatter15.com/wp/category/3d/function-plotter/" title="View all posts filed under Function Plotter">Function Plotter</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://antimatter15.com/wp/category/ajaxanimator/" title="Stuff about my project, the Ajax Animator.">Ajax Animator</a>
+<ul class='children'>
+	<li class="cat-item cat-item-669"><a href="http://antimatter15.com/wp/category/ajaxanimator/forkswif/" title="View all posts filed under ForkSwif">ForkSwif</a>
+</li>
+	<li class="cat-item cat-item-909"><a href="http://antimatter15.com/wp/category/ajaxanimator/onlypaths-ajaxanimator/" title="View all posts filed under OnlyPaths">OnlyPaths</a>
+</li>
+	<li class="cat-item cat-item-774"><a href="http://antimatter15.com/wp/category/ajaxanimator/stick-figures/" title="View all posts filed under Stick Figures">Stick Figures</a>
+</li>
+	<li class="cat-item cat-item-676"><a href="http://antimatter15.com/wp/category/ajaxanimator/vectoreditor-ajaxanimator/" title="View all posts filed under VectorEditor">VectorEditor</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-440"><a href="http://antimatter15.com/wp/category/chrome-2/" title="Google Chrome extensions">Chrome Extensions</a>
+<ul class='children'>
+	<li class="cat-item cat-item-660"><a href="http://antimatter15.com/wp/category/chrome-2/cloud-save-chrome-2/" title="View all posts filed under Cloud Save">Cloud Save</a>
+</li>
+	<li class="cat-item cat-item-598"><a href="http://antimatter15.com/wp/category/chrome-2/cloudfall-chrome-2/" title="View all posts filed under CloudFall">CloudFall</a>
+</li>
+	<li class="cat-item cat-item-444"><a href="http://antimatter15.com/wp/category/chrome-2/chrome-desksearch/" title="View all posts filed under Desktop Search">Desktop Search</a>
+</li>
+	<li class="cat-item cat-item-442"><a href="http://antimatter15.com/wp/category/chrome-2/drag2up/" title="drag and drop files">drag2up</a>
+</li>
+	<li class="cat-item cat-item-443"><a href="http://antimatter15.com/wp/category/chrome-2/hide-elements/" title="Hide Elements">Hide Elements</a>
+</li>
+	<li class="cat-item cat-item-647"><a href="http://antimatter15.com/wp/category/chrome-2/google-music-2/" title="View all posts filed under MusicAlpha">MusicAlpha</a>
+</li>
+	<li class="cat-item cat-item-699"><a href="http://antimatter15.com/wp/category/chrome-2/swipe-gesture/" title="View all posts filed under Swipe Gesture">Swipe Gesture</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1289"><a href="http://antimatter15.com/wp/category/color-2/" title="View all posts filed under Color">Color</a>
+</li>
+	<li class="cat-item cat-item-606"><a href="http://antimatter15.com/wp/category/data/" title="View all posts filed under Data">Data</a>
+<ul class='children'>
+	<li class="cat-item cat-item-607"><a href="http://antimatter15.com/wp/category/data/facebook-visualization/" title="View all posts filed under Facebook Visualization">Facebook Visualization</a>
+</li>
+	<li class="cat-item cat-item-1137"><a href="http://antimatter15.com/wp/category/data/planckwmap/" title="View all posts filed under Planck/WMAP">Planck/WMAP</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-659"><a href="http://antimatter15.com/wp/category/design/" title="View all posts filed under Design">Design</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1043"><a href="http://antimatter15.com/wp/category/design/fluidizer/" title="View all posts filed under Fluidizer">Fluidizer</a>
+</li>
+	<li class="cat-item cat-item-1064"><a href="http://antimatter15.com/wp/category/design/scroll-bar/" title="View all posts filed under Scroll Bar">Scroll Bar</a>
+</li>
+	<li class="cat-item cat-item-1049"><a href="http://antimatter15.com/wp/category/design/the-foward-button/" title="View all posts filed under The Foward Button">The Foward Button</a>
+</li>
+	<li class="cat-item cat-item-1066"><a href="http://antimatter15.com/wp/category/design/web-notifications/" title="View all posts filed under Web Notifications">Web Notifications</a>
+</li>
+	<li class="cat-item cat-item-1025"><a href="http://antimatter15.com/wp/category/design/zooming-user-interface/" title="View all posts filed under Zooming User Interface">Zooming User Interface</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-605"><a href="http://antimatter15.com/wp/category/school-2/" title="View all posts filed under Education">Education</a>
+<ul class='children'>
+	<li class="cat-item cat-item-611"><a href="http://antimatter15.com/wp/category/school-2/schedule-compare-school-2/" title="View all posts filed under Schedule Compare">Schedule Compare</a>
+</li>
+	<li class="cat-item cat-item-1093"><a href="http://antimatter15.com/wp/category/school-2/vectorized/" title="View all posts filed under Vectorized">Vectorized</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-608"><a href="http://antimatter15.com/wp/category/jokes/" title="View all posts filed under Fun">Fun</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1099"><a href="http://antimatter15.com/wp/category/jokes/facebook-bot/" title="View all posts filed under Facebook Bot">Facebook Bot</a>
+</li>
+	<li class="cat-item cat-item-446"><a href="http://antimatter15.com/wp/category/jokes/goog-venn/" title="View all posts filed under Google Suggest Venn Diagrams">Google Suggest Venn Diagrams</a>
+</li>
+	<li class="cat-item cat-item-610"><a href="http://antimatter15.com/wp/category/jokes/pepper-spray-cop/" title="View all posts filed under Pepper Spray Cop">Pepper Spray Cop</a>
+</li>
+	<li class="cat-item cat-item-688"><a href="http://antimatter15.com/wp/category/jokes/sideways-google/" title="View all posts filed under Sideways Google">Sideways Google</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-596"><a href="http://antimatter15.com/wp/category/games/" title="Experiments with building things which might be confused with games">Games</a>
+<ul class='children'>
+	<li class="cat-item cat-item-661"><a href="http://antimatter15.com/wp/category/games/cometrpg/" title="View all posts filed under CometRPG">CometRPG</a>
+</li>
+	<li class="cat-item cat-item-698"><a href="http://antimatter15.com/wp/category/games/gravity/" title="View all posts filed under Gravity">Gravity</a>
+</li>
+	<li class="cat-item cat-item-597"><a href="http://antimatter15.com/wp/category/games/pinball/" title="View all posts filed under Pinball">Pinball</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-342"><a href="http://antimatter15.com/wp/category/gwave/" title="View all posts filed under Google Wave">Google Wave</a>
+<ul class='children'>
+	<li class="cat-item cat-item-343"><a href="http://antimatter15.com/wp/category/gwave/anony-bot/" title="View all posts filed under Anony-bot">Anony-bot</a>
+</li>
+	<li class="cat-item cat-item-344"><a href="http://antimatter15.com/wp/category/gwave/anony-bot-embed/" title="View all posts filed under Deep Comment Integration">Deep Comment Integration</a>
+</li>
+	<li class="cat-item cat-item-345"><a href="http://antimatter15.com/wp/category/gwave/microwave-wave-2/" title="View all posts filed under Microwave">Microwave</a>
+</li>
+	<li class="cat-item cat-item-350"><a href="http://antimatter15.com/wp/category/gwave/wave-reader-wave-2/" title="View all posts filed under Wave Reader">Wave Reader</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-651"><a href="http://antimatter15.com/wp/category/google-plus-2/" title="View all posts filed under Google+">Google+</a>
+<ul class='children'>
+	<li class="cat-item cat-item-613"><a href="http://antimatter15.com/wp/category/google-plus-2/surplus-chrome-2/" title="View all posts filed under Surplus">Surplus</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-757"><a href="http://antimatter15.com/wp/category/hardware-2/" title="View all posts filed under Hardware">Hardware</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1159"><a href="http://antimatter15.com/wp/category/hardware-2/arduino-scanner/" title="View all posts filed under Arduino + Scanner">Arduino + Scanner</a>
+</li>
+	<li class="cat-item cat-item-758"><a href="http://antimatter15.com/wp/category/hardware-2/raspberry-pi/" title="View all posts filed under Raspberry Pi">Raspberry Pi</a>
+</li>
+	<li class="cat-item cat-item-783"><a href="http://antimatter15.com/wp/category/hardware-2/samsung-series-5/" title="View all posts filed under Samsung Series 5">Samsung Series 5</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://antimatter15.com/wp/category/distributed-computing/" title="View all posts filed under Javascript Distributed Computing">Javascript Distributed Computing</a>
+</li>
+	<li class="cat-item cat-item-609"><a href="http://antimatter15.com/wp/category/meta/" title="View all posts filed under Meta">Meta</a>
+</li>
+	<li class="cat-item cat-item-697"><a href="http://antimatter15.com/wp/category/mp3-player/" title="View all posts filed under MP3 Player">MP3 Player</a>
+</li>
+	<li class="cat-item cat-item-1021"><a href="http://antimatter15.com/wp/category/codecs/" title="View all posts filed under Multimedia Codecs">Multimedia Codecs</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1036"><a href="http://antimatter15.com/wp/category/codecs/animated-gif-encoder/" title="View all posts filed under Animated GIF Encoder">Animated GIF Encoder</a>
+</li>
+	<li class="cat-item cat-item-1065"><a href="http://antimatter15.com/wp/category/codecs/freemoviejs/" title="View all posts filed under Freemovie/JS">Freemovie/JS</a>
+</li>
+	<li class="cat-item cat-item-1042"><a href="http://antimatter15.com/wp/category/codecs/mp3-id3v2-parser/" title="View all posts filed under MP3 ID3v2 Parser">MP3 ID3v2 Parser</a>
+</li>
+	<li class="cat-item cat-item-1022"><a href="http://antimatter15.com/wp/category/codecs/vp8-vs-h-264/" title="View all posts filed under VP8 vs. H.264">VP8 vs. H.264</a>
+</li>
+	<li class="cat-item cat-item-445"><a href="http://antimatter15.com/wp/category/codecs/weppy-other/" title="View all posts filed under Weppy">Weppy</a>
+</li>
+	<li class="cat-item cat-item-1068"><a href="http://antimatter15.com/wp/category/codecs/whammy/" title="View all posts filed under Whammy">Whammy</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-648"><a href="http://antimatter15.com/wp/category/offline-wiki-other/" title="View all posts filed under Offline Wiki">Offline Wiki</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="http://antimatter15.com/wp/category/other/" title="View all posts filed under Other">Other</a>
+</li>
+	<li class="cat-item cat-item-346"><a href="http://antimatter15.com/wp/category/p2p-other/" title="View all posts filed under P2P">P2P</a>
+</li>
+	<li class="cat-item cat-item-1081"><a href="http://antimatter15.com/wp/category/pedant/" title="View all posts filed under Pedant">Pedant</a>
+</li>
+	<li class="cat-item cat-item-1283"><a href="http://antimatter15.com/wp/category/project-naptha/" title="View all posts filed under Project Naptha">Project Naptha</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://antimatter15.com/wp/category/project-wikify/" title="View all posts filed under Project Wikify">Project Wikify</a>
+</li>
+	<li class="cat-item cat-item-1023"><a href="http://antimatter15.com/wp/category/security-2/" title="View all posts filed under Security">Security</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1024"><a href="http://antimatter15.com/wp/category/security-2/anti-phishing-system/" title="View all posts filed under Anti-Phishing System">Anti-Phishing System</a>
+</li>
+	<li class="cat-item cat-item-1053"><a href="http://antimatter15.com/wp/category/security-2/clickjacking/" title="View all posts filed under Clickjacking">Clickjacking</a>
+</li>
+	<li class="cat-item cat-item-1067"><a href="http://antimatter15.com/wp/category/security-2/hash-functions/" title="View all posts filed under Hash Functions">Hash Functions</a>
+</li>
+	<li class="cat-item cat-item-1158"><a href="http://antimatter15.com/wp/category/security-2/passwords/" title="View all posts filed under Passwords">Passwords</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-447"><a href="http://antimatter15.com/wp/category/streamie-other/" title="View all posts filed under Streamie">Streamie</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://antimatter15.com/wp/category/touchscreens/" title="View all posts filed under Touchscreens">Touchscreens</a>
+<ul class='children'>
+	<li class="cat-item cat-item-7"><a href="http://antimatter15.com/wp/category/touchscreens/mirrortouch/" title="View all posts filed under MirrorTouch">MirrorTouch</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://antimatter15.com/wp/category/touchscreens/shinytouch/" title="View all posts filed under ShinyTouch">ShinyTouch</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://antimatter15.com/wp/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-662"><a href="http://antimatter15.com/wp/category/vnc-in-ext-js-desktop/" title="View all posts filed under VNC in Ext.JS Desktop">VNC in Ext.JS Desktop</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://antimatter15.com/wp/category/vxjs/" title="View all posts filed under vX JS">vX JS</a>
+</li>
+		</ul>
+<div class="clear"></div></div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/05/perceptual-color-distance-and-rgb-and-lab/">Perceptual color distance and RGB and L*a*b</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/04/project-naptha/">Project Naptha</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/03/unwarranted-speculation-on-oculus-vr/">Unwarranted Speculation On Oculus VR</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/02/february-progress-report/">February Progress Report</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/01/heapqueue-js/">HeapQueue.JS</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/12/ocrad-js-pure-javascript-ocr-via-emscripten/">OCRAD.js: Pure Javascript OCR via Emscripten</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/11/november-progress-report/">November Progress Report</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/10/october-progress-update/">October Progress Update</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/09/casio-mute/">Muting a Casio W-201 Watch</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/09/x-no-wiretap/">X-No-Wiretap</a>
+						</li>
+				</ul>
+		<div class="clear"></div></div><div id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+	<li><a href='http://antimatter15.com/wp/2014/05/'>May 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/04/'>April 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/03/'>March 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/02/'>February 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/01/'>January 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/12/'>December 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/11/'>November 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/10/'>October 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/09/'>September 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/08/'>August 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/07/'>July 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/06/'>June 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/05/'>May 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/04/'>April 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/03/'>March 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/02/'>February 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/01/'>January 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/12/'>December 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/11/'>November 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/10/'>October 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/09/'>September 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/08/'>August 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/07/'>July 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/06/'>June 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/05/'>May 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/04/'>April 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/03/'>March 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/02/'>February 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/01/'>January 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/12/'>December 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/11/'>November 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/10/'>October 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/09/'>September 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/08/'>August 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/07/'>July 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/06/'>June 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/05/'>May 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/04/'>April 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/03/'>March 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/02/'>February 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/01/'>January 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/12/'>December 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/11/'>November 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/10/'>October 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/09/'>September 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/08/'>August 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/07/'>July 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/06/'>June 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/05/'>May 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/04/'>April 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/03/'>March 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/02/'>February 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/01/'>January 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/12/'>December 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/11/'>November 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/10/'>October 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/09/'>September 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/08/'>August 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/07/'>July 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/06/'>June 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/05/'>May 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/04/'>April 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/03/'>March 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/01/'>January 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/12/'>December 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/11/'>November 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/10/'>October 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/09/'>September 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/08/'>August 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/07/'>July 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/06/'>June 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/05/'>May 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/04/'>April 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/03/'>March 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/02/'>February 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/01/'>January 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/12/'>December 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/11/'>November 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/10/'>October 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/09/'>September 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/08/'>August 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/05/'>May 2007</a></li>
+		</ul>
+<div class="clear"></div></div><div id="tag_cloud-4" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2><div class="tagcloud"><a href='http://antimatter15.com/wp/tag/ajax/' class='tag-link-28' title='14 topics' style='font-size: 14.794117647059pt;'>ajax</a>
+<a href='http://antimatter15.com/wp/tag/ajax-animator/' class='tag-link-261' title='16 topics' style='font-size: 15.823529411765pt;'>ajax animator</a>
+<a href='http://antimatter15.com/wp/tag/apple/' class='tag-link-322' title='10 topics' style='font-size: 11.911764705882pt;'>apple</a>
+<a href='http://antimatter15.com/wp/tag/browser/' class='tag-link-129' title='10 topics' style='font-size: 11.911764705882pt;'>browser</a>
+<a href='http://antimatter15.com/wp/tag/bugfix/' class='tag-link-149' title='6 topics' style='font-size: 8pt;'>bugfix</a>
+<a href='http://antimatter15.com/wp/tag/chrome/' class='tag-link-128' title='26 topics' style='font-size: 19.941176470588pt;'>chrome</a>
+<a href='http://antimatter15.com/wp/tag/elitist/' class='tag-link-19' title='9 topics' style='font-size: 11.088235294118pt;'>elitist</a>
+<a href='http://antimatter15.com/wp/tag/evil/' class='tag-link-231' title='8 topics' style='font-size: 10.058823529412pt;'>evil</a>
+<a href='http://antimatter15.com/wp/tag/extension/' class='tag-link-422' title='8 topics' style='font-size: 10.058823529412pt;'>extension</a>
+<a href='http://antimatter15.com/wp/tag/extjs/' class='tag-link-134' title='9 topics' style='font-size: 11.088235294118pt;'>ExtJS</a>
+<a href='http://antimatter15.com/wp/tag/fast/' class='tag-link-24' title='9 topics' style='font-size: 11.088235294118pt;'>fast</a>
+<a href='http://antimatter15.com/wp/tag/features/' class='tag-link-163' title='6 topics' style='font-size: 8pt;'>features</a>
+<a href='http://antimatter15.com/wp/tag/firefox/' class='tag-link-150' title='11 topics' style='font-size: 12.735294117647pt;'>firefox</a>
+<a href='http://antimatter15.com/wp/tag/flash/' class='tag-link-50' title='7 topics' style='font-size: 9.0294117647059pt;'>flash</a>
+<a href='http://antimatter15.com/wp/tag/future/' class='tag-link-234' title='6 topics' style='font-size: 8pt;'>future</a>
+<a href='http://antimatter15.com/wp/tag/github/' class='tag-link-257' title='6 topics' style='font-size: 8pt;'>github</a>
+<a href='http://antimatter15.com/wp/tag/google/' class='tag-link-75' title='33 topics' style='font-size: 22pt;'>google</a>
+<a href='http://antimatter15.com/wp/tag/google-wave/' class='tag-link-224' title='13 topics' style='font-size: 14.176470588235pt;'>google wave</a>
+<a href='http://antimatter15.com/wp/tag/hosting/' class='tag-link-6' title='8 topics' style='font-size: 10.058823529412pt;'>hosting</a>
+<a href='http://antimatter15.com/wp/tag/html5/' class='tag-link-340' title='8 topics' style='font-size: 10.058823529412pt;'>html5</a>
+<a href='http://antimatter15.com/wp/tag/internet-exploder/' class='tag-link-85' title='9 topics' style='font-size: 11.088235294118pt;'>internet exploder</a>
+<a href='http://antimatter15.com/wp/tag/ipad/' class='tag-link-321' title='7 topics' style='font-size: 9.0294117647059pt;'>ipad</a>
+<a href='http://antimatter15.com/wp/tag/javascript/' class='tag-link-77' title='27 topics' style='font-size: 20.352941176471pt;'>javascript</a>
+<a href='http://antimatter15.com/wp/tag/json/' class='tag-link-118' title='6 topics' style='font-size: 8pt;'>json</a>
+<a href='http://antimatter15.com/wp/tag/linux/' class='tag-link-46' title='7 topics' style='font-size: 9.0294117647059pt;'>linux</a>
+<a href='http://antimatter15.com/wp/tag/login/' class='tag-link-136' title='6 topics' style='font-size: 8pt;'>login</a>
+<a href='http://antimatter15.com/wp/tag/new/' class='tag-link-83' title='8 topics' style='font-size: 10.058823529412pt;'>new</a>
+<a href='http://antimatter15.com/wp/tag/offline/' class='tag-link-491' title='7 topics' style='font-size: 9.0294117647059pt;'>offline</a>
+<a href='http://antimatter15.com/wp/tag/old/' class='tag-link-202' title='7 topics' style='font-size: 9.0294117647059pt;'>old</a>
+<a href='http://antimatter15.com/wp/tag/onlypaths/' class='tag-link-103' title='7 topics' style='font-size: 9.0294117647059pt;'>onlypaths</a>
+<a href='http://antimatter15.com/wp/tag/pi/' class='tag-link-35' title='8 topics' style='font-size: 10.058823529412pt;'>pi</a>
+<a href='http://antimatter15.com/wp/tag/python/' class='tag-link-44' title='10 topics' style='font-size: 11.911764705882pt;'>python</a>
+<a href='http://antimatter15.com/wp/tag/raphael/' class='tag-link-140' title='8 topics' style='font-size: 10.058823529412pt;'>raphael</a>
+<a href='http://antimatter15.com/wp/tag/shiny/' class='tag-link-15' title='11 topics' style='font-size: 12.735294117647pt;'>shiny</a>
+<a href='http://antimatter15.com/wp/tag/small/' class='tag-link-113' title='8 topics' style='font-size: 10.058823529412pt;'>small</a>
+<a href='http://antimatter15.com/wp/tag/svg/' class='tag-link-95' title='6 topics' style='font-size: 8pt;'>SVG</a>
+<a href='http://antimatter15.com/wp/tag/update/' class='tag-link-98' title='24 topics' style='font-size: 19.323529411765pt;'>update</a>
+<a href='http://antimatter15.com/wp/tag/upload/' class='tag-link-425' title='7 topics' style='font-size: 9.0294117647059pt;'>upload</a>
+<a href='http://antimatter15.com/wp/tag/vectoreditor/' class='tag-link-198' title='8 topics' style='font-size: 10.058823529412pt;'>vectoreditor</a>
+<a href='http://antimatter15.com/wp/tag/video/' class='tag-link-255' title='6 topics' style='font-size: 8pt;'>video</a>
+<a href='http://antimatter15.com/wp/tag/vxjs/' class='tag-link-27' title='8 topics' style='font-size: 10.058823529412pt;'>vX JS</a>
+<a href='http://antimatter15.com/wp/tag/wave/' class='tag-link-220' title='17 topics' style='font-size: 16.441176470588pt;'>wave</a>
+<a href='http://antimatter15.com/wp/tag/wikify/' class='tag-link-81' title='9 topics' style='font-size: 11.088235294118pt;'>wikify</a>
+<a href='http://antimatter15.com/wp/tag/wikipedia/' class='tag-link-16' title='7 topics' style='font-size: 9.0294117647059pt;'>wikipedia</a>
+<a href='http://antimatter15.com/wp/tag/wordpress/' class='tag-link-97' title='9 topics' style='font-size: 11.088235294118pt;'>wordpress</a></div>
+<div class="clear"></div></div>	</div><!--#primary-sidebar-->
+	
+	<div class="clear"></div>
+</div><!--#sidebar-->			<div class="clear"></div>
+			</div><!-- .wrapper -->
+		</div><!-- #main -->
+		<hr class="lofi" />
+		<div id="footer" class="section">
+			<div class="wrapper">		
+				<p id="generator-link">Powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and <a href="http://carringtontheme.com" title="Carrington theme for WordPress">Carrington</a>.</p>
+			</div><!--.wrapper-->
+		</div><!--#footer -->
+	</div><!--#page-->
+	<script>$=jQuery</script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201423'></script>
+</body>
+</html>

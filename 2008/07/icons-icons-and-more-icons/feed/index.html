@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Icons&#8230; Icons&#8230;  and more Icons&#8230;</title>
+	<atom:link href="http://localhost/wp/2008/07/icons-icons-and-more-icons/feed/" rel="self" type="application/rss+xml" />
+	<link>http://localhost/wp/2008/07/icons-icons-and-more-icons/</link>
+	<description>this title probably isn&#039;t very original</description>
+	<lastBuildDate>Fri, 30 May 2014 19:32:06 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.1</generator>
+	<item>
+		<title>By: admin</title>
+		<link>http://localhost/wp/2008/07/icons-icons-and-more-icons/comment-page-1/#comment-190</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 02 Jul 2008 14:49:19 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.110mb.com/wp/?p=164#comment-190</guid>
+		<description><![CDATA[Oh, and the first one (on your second comment) is an onlypaths issue, but I&#039;ll try fixing it. You can try setting the Snapping Grid to a lower number, and it might help to some extent.
+
+What do you mean by your last suggestion? How would multiple frames be displayed? I&#039;m going to add the old timeline-tooltip-preview eventually, and I want it to be able to drag the cursor through frames/etc. 
+
+I&#039;m going to work on a sort of equivalent to reload-canvas (which usually recovers the canvas when soemthing goes wrong) for the timeline.
+
+I have a feeling the problem with the 2nd one would be in the format stuff. I donno. I&#039;ll investigate more.
+
+When File-&gt;New fails, that is usually because somewhere during the process of doing file-&gt;new, an error is encountered, and the operation never completes. I&#039;ll look into that too.]]></description>
+		<content:encoded><![CDATA[<p>Oh, and the first one (on your second comment) is an onlypaths issue, but I&#8217;ll try fixing it. You can try setting the Snapping Grid to a lower number, and it might help to some extent.</p>
+<p>What do you mean by your last suggestion? How would multiple frames be displayed? I&#8217;m going to add the old timeline-tooltip-preview eventually, and I want it to be able to drag the cursor through frames/etc. </p>
+<p>I&#8217;m going to work on a sort of equivalent to reload-canvas (which usually recovers the canvas when soemthing goes wrong) for the timeline.</p>
+<p>I have a feeling the problem with the 2nd one would be in the format stuff. I donno. I&#8217;ll investigate more.</p>
+<p>When File-&gt;New fails, that is usually because somewhere during the process of doing file-&gt;new, an error is encountered, and the operation never completes. I&#8217;ll look into that too.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: admin</title>
+		<link>http://localhost/wp/2008/07/icons-icons-and-more-icons/comment-page-1/#comment-189</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 02 Jul 2008 14:41:11 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.110mb.com/wp/?p=164#comment-189</guid>
+		<description><![CDATA[Well, the first one is already known. To fix it, just manually convert the frame to a keyframe. To do that, right-click on the frame (from the timeline) and press &quot;To Keyframe&quot; and it&#039;ll tween anyway. The problem is that in onlypaths, no rotation could be either &quot;null&quot; or &quot;rotate(0, 0, 0)&quot;. So, it really gets confused alot, so as a bug-fix for that, it caused this bug in turn....
+
+Creating a new project is bugged for a known reason, but I have no idea how to resolve it yet (maybe I have already resolved it, but forgot to upload, i have no clue). 
+
+Thanks for those bug reports/feature requests, I&#039;ll get to them ASAP. Right now, i&#039;m in the process of switching to Ubuntu Hardy Heron (8.04) and i&#039;ll transfer all my data soon (including the project).]]></description>
+		<content:encoded><![CDATA[<p>Well, the first one is already known. To fix it, just manually convert the frame to a keyframe. To do that, right-click on the frame (from the timeline) and press &#8220;To Keyframe&#8221; and it&#8217;ll tween anyway. The problem is that in onlypaths, no rotation could be either &#8220;null&#8221; or &#8220;rotate(0, 0, 0)&#8221;. So, it really gets confused alot, so as a bug-fix for that, it caused this bug in turn&#8230;.</p>
+<p>Creating a new project is bugged for a known reason, but I have no idea how to resolve it yet (maybe I have already resolved it, but forgot to upload, i have no clue). </p>
+<p>Thanks for those bug reports/feature requests, I&#8217;ll get to them ASAP. Right now, i&#8217;m in the process of switching to Ubuntu Hardy Heron (8.04) and i&#8217;ll transfer all my data soon (including the project).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kemeros</title>
+		<link>http://localhost/wp/2008/07/icons-icons-and-more-icons/comment-page-1/#comment-181</link>
+		<dc:creator><![CDATA[Kemeros]]></dc:creator>
+		<pubDate>Wed, 02 Jul 2008 03:38:31 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.110mb.com/wp/?p=164#comment-181</guid>
+		<description><![CDATA[Hello again,
+
+another bug:
+
+if you select the object, use the rotate handle of the object and move the mouse over one of the stretch handles(the little squares arount the objects) while rotating, it stops rotating and you get stuck in the strech mode of the touched square. Since the undo doesn&#039;t work... you end up messing up your shape heh.
+
+
+Another bug:
+
+If you create a new project while a frame of any layer but the first is selected, the new project frames will be locked and you can&#039;t click them. So you create a second layer let&#039;s say.. then select the 3rd frame of the second layer, then go click new in the file menu, the layer 1 frames of the new project are frozen.
+
+3rd one:
+
+The layer numbers for the new layers are bugged...  if you create new layers and then start a new project.. it will add 2 to the number of the layer. and the second project will go like this: layer 1, 3,4,5 etc... if you created create yet again a new project without reloading the page.. it raises the number even more.
+
+another thing(hope i&#039;m not discouraging you):
+
+when i click file new, the menu of file often stays open and i have to click somewhere else to close it... the other buttons don&#039;t seem to do that. Maybe it&#039;s just for me...
+
+Am i clear enough when i explain stuff?
+
+not a bug but a feature request: can you make it possible to select all the layers so we can see everything at once without going in preview mode? or making it possible to shift-click the layers to select them manually
+
+
+I think it&#039;s enough for now :)
+
+Will come later for more testing ;)
+
+Kemeros]]></description>
+		<content:encoded><![CDATA[<p>Hello again,</p>
+<p>another bug:</p>
+<p>if you select the object, use the rotate handle of the object and move the mouse over one of the stretch handles(the little squares arount the objects) while rotating, it stops rotating and you get stuck in the strech mode of the touched square. Since the undo doesn&#8217;t work&#8230; you end up messing up your shape heh.</p>
+<p>Another bug:</p>
+<p>If you create a new project while a frame of any layer but the first is selected, the new project frames will be locked and you can&#8217;t click them. So you create a second layer let&#8217;s say.. then select the 3rd frame of the second layer, then go click new in the file menu, the layer 1 frames of the new project are frozen.</p>
+<p>3rd one:</p>
+<p>The layer numbers for the new layers are bugged&#8230;  if you create new layers and then start a new project.. it will add 2 to the number of the layer. and the second project will go like this: layer 1, 3,4,5 etc&#8230; if you created create yet again a new project without reloading the page.. it raises the number even more.</p>
+<p>another thing(hope i&#8217;m not discouraging you):</p>
+<p>when i click file new, the menu of file often stays open and i have to click somewhere else to close it&#8230; the other buttons don&#8217;t seem to do that. Maybe it&#8217;s just for me&#8230;</p>
+<p>Am i clear enough when i explain stuff?</p>
+<p>not a bug but a feature request: can you make it possible to select all the layers so we can see everything at once without going in preview mode? or making it possible to shift-click the layers to select them manually</p>
+<p>I think it&#8217;s enough for now <img src="http://localhost/wp/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> </p>
+<p>Will come later for more testing <img src="http://localhost/wp/wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley" /> </p>
+<p>Kemeros</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kemeros</title>
+		<link>http://localhost/wp/2008/07/icons-icons-and-more-icons/comment-page-1/#comment-180</link>
+		<dc:creator><![CDATA[Kemeros]]></dc:creator>
+		<pubDate>Wed, 02 Jul 2008 03:10:29 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.110mb.com/wp/?p=164#comment-180</guid>
+		<description><![CDATA[Hey!
+
+If you create a square for exemple and the only thing you do is rotate it. It doesn&#039;t tween. It does tween the rotation if you move the same object somewhere else.
+
+Later,
+
+Kemeros]]></description>
+		<content:encoded><![CDATA[<p>Hey!</p>
+<p>If you create a square for exemple and the only thing you do is rotate it. It doesn&#8217;t tween. It does tween the rotation if you move the same object somewhere else.</p>
+<p>Later,</p>
+<p>Kemeros</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

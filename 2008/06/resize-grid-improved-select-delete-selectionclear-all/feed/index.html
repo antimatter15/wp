@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Resize Grid, Improved Select, Delete Selection/Clear All</title>
+	<atom:link href="http://localhost/wp/2008/06/resize-grid-improved-select-delete-selectionclear-all/feed/" rel="self" type="application/rss+xml" />
+	<link>http://localhost/wp/2008/06/resize-grid-improved-select-delete-selectionclear-all/</link>
+	<description>this title probably isn&#039;t very original</description>
+	<lastBuildDate>Fri, 30 May 2014 19:32:06 +0000</lastBuildDate>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.1</generator>
+	<item>
+		<title>By: admin</title>
+		<link>http://localhost/wp/2008/06/resize-grid-improved-select-delete-selectionclear-all/comment-page-1/#comment-40</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 08 Jun 2008 13:16:42 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.110mb.com/wp/?p=94#comment-40</guid>
+		<description><![CDATA[Yes, i know. But i just went directly to Ax.canvas.renderer.removeAll() without first calling Ax.render.deleteAll(). Same effect.]]></description>
+		<content:encoded><![CDATA[<p>Yes, i know. But i just went directly to Ax.canvas.renderer.removeAll() without first calling Ax.render.deleteAll(). Same effect.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: josep_ssv</title>
+		<link>http://localhost/wp/2008/06/resize-grid-improved-select-delete-selectionclear-all/comment-page-1/#comment-35</link>
+		<dc:creator><![CDATA[josep_ssv]]></dc:creator>
+		<pubDate>Sun, 08 Jun 2008 05:13:10 +0000</pubDate>
+		<guid isPermaLink="false">http://antimatter15.110mb.com/wp/?p=94#comment-35</guid>
+		<description><![CDATA[It is not necessary to have chosen to erase all
+
+In richdraw.js
+
+RichDrawEditor.prototype.deleteAll = function() {   
+  if (this.selected) {  
+   this.renderer.removeAll();
+ }
+};
+
+change to
+
+RichDrawEditor.prototype.deleteAll = function() {   
+    this.renderer.removeAll();
+ };]]></description>
+		<content:encoded><![CDATA[<p>It is not necessary to have chosen to erase all</p>
+<p>In richdraw.js</p>
+<p>RichDrawEditor.prototype.deleteAll = function() {<br />
+  if (this.selected) {<br />
+   this.renderer.removeAll();<br />
+ }<br />
+};</p>
+<p>change to</p>
+<p>RichDrawEditor.prototype.deleteAll = function() {<br />
+    this.renderer.removeAll();<br />
+ };</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<title>Distributed Pi: Revisited &#8211; Blog</title>
+	
+	
+	
+	
+		<link rel='archives' title='May 2014' href='http://antimatter15.com/wp/2014/05/' />
+	<link rel='archives' title='April 2014' href='http://antimatter15.com/wp/2014/04/' />
+	<link rel='archives' title='March 2014' href='http://antimatter15.com/wp/2014/03/' />
+	<link rel='archives' title='February 2014' href='http://antimatter15.com/wp/2014/02/' />
+	<link rel='archives' title='January 2014' href='http://antimatter15.com/wp/2014/01/' />
+	<link rel='archives' title='December 2013' href='http://antimatter15.com/wp/2013/12/' />
+	<link rel='archives' title='November 2013' href='http://antimatter15.com/wp/2013/11/' />
+	<link rel='archives' title='October 2013' href='http://antimatter15.com/wp/2013/10/' />
+	<link rel='archives' title='September 2013' href='http://antimatter15.com/wp/2013/09/' />
+	<link rel='archives' title='August 2013' href='http://antimatter15.com/wp/2013/08/' />
+	<link rel='archives' title='July 2013' href='http://antimatter15.com/wp/2013/07/' />
+	<link rel='archives' title='June 2013' href='http://antimatter15.com/wp/2013/06/' />
+	<link rel='archives' title='May 2013' href='http://antimatter15.com/wp/2013/05/' />
+	<link rel='archives' title='April 2013' href='http://antimatter15.com/wp/2013/04/' />
+	<link rel='archives' title='March 2013' href='http://antimatter15.com/wp/2013/03/' />
+	<link rel='archives' title='February 2013' href='http://antimatter15.com/wp/2013/02/' />
+	<link rel='archives' title='January 2013' href='http://antimatter15.com/wp/2013/01/' />
+	<link rel='archives' title='December 2012' href='http://antimatter15.com/wp/2012/12/' />
+	<link rel='archives' title='November 2012' href='http://antimatter15.com/wp/2012/11/' />
+	<link rel='archives' title='October 2012' href='http://antimatter15.com/wp/2012/10/' />
+	<link rel='archives' title='September 2012' href='http://antimatter15.com/wp/2012/09/' />
+	<link rel='archives' title='August 2012' href='http://antimatter15.com/wp/2012/08/' />
+	<link rel='archives' title='July 2012' href='http://antimatter15.com/wp/2012/07/' />
+	<link rel='archives' title='June 2012' href='http://antimatter15.com/wp/2012/06/' />
+	<link rel='archives' title='May 2012' href='http://antimatter15.com/wp/2012/05/' />
+	<link rel='archives' title='April 2012' href='http://antimatter15.com/wp/2012/04/' />
+	<link rel='archives' title='March 2012' href='http://antimatter15.com/wp/2012/03/' />
+	<link rel='archives' title='February 2012' href='http://antimatter15.com/wp/2012/02/' />
+	<link rel='archives' title='January 2012' href='http://antimatter15.com/wp/2012/01/' />
+	<link rel='archives' title='December 2011' href='http://antimatter15.com/wp/2011/12/' />
+	<link rel='archives' title='November 2011' href='http://antimatter15.com/wp/2011/11/' />
+	<link rel='archives' title='October 2011' href='http://antimatter15.com/wp/2011/10/' />
+	<link rel='archives' title='September 2011' href='http://antimatter15.com/wp/2011/09/' />
+	<link rel='archives' title='August 2011' href='http://antimatter15.com/wp/2011/08/' />
+	<link rel='archives' title='July 2011' href='http://antimatter15.com/wp/2011/07/' />
+	<link rel='archives' title='June 2011' href='http://antimatter15.com/wp/2011/06/' />
+	<link rel='archives' title='May 2011' href='http://antimatter15.com/wp/2011/05/' />
+	<link rel='archives' title='April 2011' href='http://antimatter15.com/wp/2011/04/' />
+	<link rel='archives' title='March 2011' href='http://antimatter15.com/wp/2011/03/' />
+	<link rel='archives' title='February 2011' href='http://antimatter15.com/wp/2011/02/' />
+	<link rel='archives' title='January 2011' href='http://antimatter15.com/wp/2011/01/' />
+	<link rel='archives' title='December 2010' href='http://antimatter15.com/wp/2010/12/' />
+	<link rel='archives' title='November 2010' href='http://antimatter15.com/wp/2010/11/' />
+	<link rel='archives' title='October 2010' href='http://antimatter15.com/wp/2010/10/' />
+	<link rel='archives' title='September 2010' href='http://antimatter15.com/wp/2010/09/' />
+	<link rel='archives' title='August 2010' href='http://antimatter15.com/wp/2010/08/' />
+	<link rel='archives' title='July 2010' href='http://antimatter15.com/wp/2010/07/' />
+	<link rel='archives' title='June 2010' href='http://antimatter15.com/wp/2010/06/' />
+	<link rel='archives' title='May 2010' href='http://antimatter15.com/wp/2010/05/' />
+	<link rel='archives' title='April 2010' href='http://antimatter15.com/wp/2010/04/' />
+	<link rel='archives' title='March 2010' href='http://antimatter15.com/wp/2010/03/' />
+	<link rel='archives' title='February 2010' href='http://antimatter15.com/wp/2010/02/' />
+	<link rel='archives' title='January 2010' href='http://antimatter15.com/wp/2010/01/' />
+	<link rel='archives' title='December 2009' href='http://antimatter15.com/wp/2009/12/' />
+	<link rel='archives' title='November 2009' href='http://antimatter15.com/wp/2009/11/' />
+	<link rel='archives' title='October 2009' href='http://antimatter15.com/wp/2009/10/' />
+	<link rel='archives' title='September 2009' href='http://antimatter15.com/wp/2009/09/' />
+	<link rel='archives' title='August 2009' href='http://antimatter15.com/wp/2009/08/' />
+	<link rel='archives' title='July 2009' href='http://antimatter15.com/wp/2009/07/' />
+	<link rel='archives' title='June 2009' href='http://antimatter15.com/wp/2009/06/' />
+	<link rel='archives' title='May 2009' href='http://antimatter15.com/wp/2009/05/' />
+	<link rel='archives' title='April 2009' href='http://antimatter15.com/wp/2009/04/' />
+	<link rel='archives' title='March 2009' href='http://antimatter15.com/wp/2009/03/' />
+	<link rel='archives' title='January 2009' href='http://antimatter15.com/wp/2009/01/' />
+	<link rel='archives' title='December 2008' href='http://antimatter15.com/wp/2008/12/' />
+	<link rel='archives' title='November 2008' href='http://antimatter15.com/wp/2008/11/' />
+	<link rel='archives' title='October 2008' href='http://antimatter15.com/wp/2008/10/' />
+	<link rel='archives' title='September 2008' href='http://antimatter15.com/wp/2008/09/' />
+	<link rel='archives' title='August 2008' href='http://antimatter15.com/wp/2008/08/' />
+	<link rel='archives' title='July 2008' href='http://antimatter15.com/wp/2008/07/' />
+	<link rel='archives' title='June 2008' href='http://antimatter15.com/wp/2008/06/' />
+	<link rel='archives' title='May 2008' href='http://antimatter15.com/wp/2008/05/' />
+	<link rel='archives' title='April 2008' href='http://antimatter15.com/wp/2008/04/' />
+	<link rel='archives' title='March 2008' href='http://antimatter15.com/wp/2008/03/' />
+	<link rel='archives' title='February 2008' href='http://antimatter15.com/wp/2008/02/' />
+	<link rel='archives' title='January 2008' href='http://antimatter15.com/wp/2008/01/' />
+	<link rel='archives' title='December 2007' href='http://antimatter15.com/wp/2007/12/' />
+	<link rel='archives' title='November 2007' href='http://antimatter15.com/wp/2007/11/' />
+	<link rel='archives' title='October 2007' href='http://antimatter15.com/wp/2007/10/' />
+	<link rel='archives' title='September 2007' href='http://antimatter15.com/wp/2007/09/' />
+	<link rel='archives' title='August 2007' href='http://antimatter15.com/wp/2007/08/' />
+	<link rel='archives' title='May 2007' href='http://antimatter15.com/wp/2007/05/' />
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://antimatter15.com/wp/wp-content/themes/carrington-woot/css/css.css" />
+
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="http://antimatter15.com/wp/wp-content/themes/carrington-woot/css/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="http://antimatter15.com/wp/wp-content/themes/carrington-woot/css/ie6.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="http://antimatter15.com/wp/wp-content/themes/carrington-woot/js/DD_belatedPNG.js"></script>
+		<script type="text/javascript">
+			DD_belatedPNG.fix('img, #header, #footer, #header .wrapper, #footer .wrapper, #TB_title, #developer-link a');
+		</script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+	window.google_analytics_uacct = "UA-1367972-3";
+</script>
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1367972-3']);
+				</script><script src="http://antimatter15.com/wp/wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			
+<script type='text/javascript' src='http://antimatter15.com/wp/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='http://antimatter15.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://antimatter15.com/wp/wp-content/themes/carrington-woot/js/carrington.js?ver=1.0'></script>
+
+ 
+
+<link rel='next' title='Swipe Gesture for Chrome' href='http://antimatter15.com/wp/2012/08/swipe-gesture-for-chrome/' />
+
+<link rel='canonical' href='http://antimatter15.com/wp/2012/08/distributed-pi-revisited/' />
+<link rel='shortlink' href='http://antimatter15.com/wp/?p=1760' />
+
+<script type="text/javascript">
+var CFCT_URL = "http://antimatter15.com/wp";
+var CFCT_AJAX_LOAD = true;
+</script>
+	<style type="text/css">
+#header {
+	background-color: #38404e;
+	color: #cecfd1;
+}
+#header a,
+#header a:visited {
+	color: #ffffff;
+}
+#sub-header,
+.nav ul{
+	background-color: #e9eaea;
+	color: #51555c;
+}
+#sub-header a,
+#sub-header a:visited,
+.nav li li a,
+.nav li li a:visited {
+	color: #416892 !important;
+}
+h1,
+h1 a,
+h1 a:hover,
+h1 a:visited {
+	color: #51555c;
+}
+h2,
+h2 a,
+h2 a:hover,
+h2 a:visited {
+	color: #51555c;
+}
+a,
+a:hover,
+a:visited {
+	color: #416892;
+}
+.hentry .edit,
+.hentry .edit a,
+.hentry .edit a:visited,
+.hentry .edit a:hover,
+.comment-reply-link,
+.comment-reply-link:visited,
+.comment-reply-link:hover {
+	background-color: #416892;
+}
+#footer {
+	background-color: #51555c;
+	color: #999999;
+}
+#footer a,
+#footer a:visited {
+	color: #CECFD1;
+}
+#footer p#developer-link a,
+#footer p#developer-link a:visited {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/footer/by-crowd-favorite-light.png);
+}
+#header {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/header/gradient-dark.png);
+}
+#header .wrapper {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/header/texture-light.png);
+}
+#footer {
+	background-image: url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/footer/gradient-light.png);
+}
+</style>
+</head>
+
+<body>
+	<div id="page">
+		<div id="top"><a class="accessibility" href="#content">Skip to content</a></div>
+		<hr class="lofi" />
+		<div id="header" class="section">
+			<div class="wrapper">
+				<strong id="blog-title"><a href="http://antimatter15.com/wp/" rel="home">Blog</a></strong>
+				<p id="blog-description">this title probably isn&#039;t very original</p>
+		
+
+						 		<div id="navigation">
+					<ul class="nav clearfix">
+												<li id="menu-item-1820" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1820"><a href="http://antimatter15.com/wp/" onclick="javascript:_gaq.push(['_trackEvent','outbound-menu','http://antimatter15.com']);">Blog</a></li>
+<li id="menu-item-1819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1819"><a href="http://antimatter15.com/wp/about/" >About</a></li>
+<li id="menu-item-1821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1821"><a href="http://antimatter15.com/wp/projects/" >Projects</a></li>
+<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="http://antimatter15.com/wp/ajax-animator/" >Ajax Animator</a></li>
+						<li class="secondary search">
+<form method="get" id="cfct-search" action="http://antimatter15.com/wp/" onsubmit="location.href=this.action+'search/'+encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;">
+	<div>
+		<input type="text" id="cfct-search-input" name="s" value="" size="15" />
+		<input type="submit" name="submit_button" value="Search" />
+	</div>
+</form></li>
+					</ul>
+				</div><!-- #navigation -->
+			</div><!-- .wrapper -->
+		</div><!-- #header -->
+
+		<hr class="lofi" />
+		<div id="main" class="section">
+			<div class="wrapper">
+
+<div id="content">
+<div id="post-content-1760" class="post-1760 post type-post status-publish format-standard hentry category-distributed-computing tag-bbp tag-computing tag-cords tag-distributed tag-distributed-computing-2 tag-distributed-pi tag-fabrice-bellard tag-intelligence tag-javascript tag-lljs tag-magical tag-math tag-maths tag-moore tag-node tag-nodejs tag-pi tag-primes tag-revive tag-revsiting tag-websockets tag-webworkers full">
+	
+	<h1 class="entry-title full-title"><a href="http://antimatter15.com/wp/2012/08/distributed-pi-revisited/" title="Permanent link to Distributed Pi: Revisited" rel="bookmark" rev="post-1760">Distributed Pi: Revisited</a></h1>
+	
+	<div class="entry-content full-content">
+<p><a href="http://antimatter15.com/wp/wp-content/uploads/2012/08/Screenshot-from-2012-08-11-223733.png" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://antimatter15.com']);"><img class="alignright size-thumbnail wp-image-1761" title="Screenshot from 2012-08-11 22:37:33" src="http://antimatter15.com/wp/wp-content/uploads/2012/08/Screenshot-from-2012-08-11-223733-150x150.png" alt="" width="150" height="150" /></a></p>
+<p>So I&#8217;ve been interested in distributed computing for some time, since 2007, basically around the time I started doing web development. I&#8217;ve always sort of romanticized the notion of distributed computing because of its vast theoretical potential. Projects like <a href="http://boinc.berkeley.edu/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://boinc.berkeley.edu']);">BOINC</a>, <a href="http://setiathome.berkeley.edu/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://setiathome.berkeley.edu']);">SETI@Home</a> and <a href="http://folding.stanford.edu/English/HomePage" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://folding.stanford.edu']);">Folding@Home</a> have always given me some kind of idealized notion of &#8220;computing for good&#8221;, inspiring some kind of useful social, scientific or otherwise beneficial change to humanity. But those projects never got the kind of adoption which could truly change the world, together they form networks which are specialized but can, in the end, only eke relatively minute performance.</p>
+<p>Part of the problem lies in their intrinsic forbidding voluntary nature. It takes too much effort to install and amplifies the problems intrinsic to any &#8220;democratic&#8221; system: why bother? Voter apathy often stems from a feeling that an individual contribution regresses towards nothing, which is statistically certainly true, but never helpful if it plays a part in the participation of one of these collective entities.</p>
+<p>In a broader sense, I&#8217;ve always suspected that part of what is necessary for technological progress is the loss of control. Certainly something which appears true from a human experience, that the vast arrays of neurons bound by a cranium are uninviting and wholly unwilling to expose their inner raw computation power to the emergent conscience within them. No doubt the human brain is good at computing, just not (as it appears) math, but intuition (especially of the physical kind) can only arise when a system internalizes some very complex math. We just can&#8217;t access it, because evolution or some other process has determined that it was something that had to be done away with on the climb to higher cognitive powers.</p>
+<p>Likewise, I think computers are convergent in that sort of way. There&#8217;s a great ladder of abstraction which is growing taller and taller, a tower of babel of sorts, and at the end, perhaps we&#8217;ll find a similar goal, maybe not of god per se, but an equally sought target of consciousness or some other high level intellectual faculties contemporaneously denied to computers.</p>
+<p>Part of this is losing control, which is inevitable and politically dangerous. Computing terminals are powerful and capable of much more than they&#8217;re being used for. In fact, most computers spend most time idling, the processors get ever faster not for the handling of the idle time but in order to smooth out the few bursts that actually require fast computation.</p>
+<p>It&#8217;s impractical for operating systems to build into them some kind of distributed computing platform, however ideal that would be. It&#8217;s too contentious to ever get adopted, conceptually a short step away from the ability for a mega-corp to pilfer your precious information as well.</p>
+<p>But the browser, specifically the web, provides us with an interesting opportunity. Here, we have significantly less fear of personal privacy, since it comes with an expectation of sorts for information sharing. The existence of client side scripting and its prevalence gives an implicit permission to exploit system resources during the site&#8217;s tenure.</p>
+<p>Now, of these granted permissions, we have the freedom now to exploit in order to create something truly remarkable. Because it&#8217;s not so much voluntary on the part of the user, so much as voluntary on the part of the site maintainer who now has the responsibility of allocating and managing the system resources of his visitors, for their brief but additive virtual encounters. The users lose control, and that&#8217;s a good thing.</p>
+<h2>Old Stuff</h2>
+<p>When I first wrote that introduction, I mentioned that I was interested in distributed computing for <a href="http://antimatter15.com/wp/2007/10/ajax-distributed-computing/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://antimatter15.com']);">quite a while</a>, and that&#8217;s true. 2007 was, at time of writing five years ago. A bit less than a third of my life, which is fairly significant. It doesn&#8217;t even quite belong to recent memory, and perhaps has escaped living memory into something quasi-zomboid. Part of the reason why this section is relatively short compared to the other ones is because I really don&#8217;t have a very good memory of what that was like, and it&#8217;s rather sad that my previous attempts never had long writeups regarding their potential and process (however, there do tend to be more little updates about the process).</p>
+<p>Anyway, as it&#8217;s been such a long time, I&#8217;m trying to dig through old stuff to pick out exactly what I did back then. The first things I can find are somewhat easier and simpler problems, finding palindromes, or at least words which spell different words when reversed (I believe this was based on a program I had written a few years prior in Visual Basic). Another was for cracking hashes in a distributed manner.</p>
+<p>Back then, I think those were one of the first explorations into the concept, of distributed computing in the browser. It was the days before WebWorkers and Cross-Origin Resource Sharing was in its infancy. The pool of possible computation was however, still large but most of it was forbidden. Take note, however that distributed and parallel computing have existed for far longer, perhaps even longer than the idea of a computer.</p>
+<p>Computers get faster each year, thanks to <a href="http://en.wikipedia.org/wiki/Moore%27s_law" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">Moore&#8217;s Law</a> and more and more people get connected to the Internet each year. Perhaps in addition to <a href="http://en.wikipedia.org/wiki/Metcalfe%27s_law" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">Metcalfe&#8217;s law</a> with regard to the value of a telecommunication&#8217;s network, is the ability to harness idle computation power in order to increase the vale of its participants linearly as the network grows. There are almost a billion people who are connected to the Internet, and however insignificant of a contribution each of those terminals brings to the network would add up into something truly remarkable.</p>
+<p>However, hash cracking and palindrome finding are fairly trivial. They have little real world practicality and don&#8217;t seem in any way representative of the greater problems facing humanity. While it&#8217;s a little impractical to aim for some kind of project which has immediate applications to the value of humanity, it&#8217;s certainly a worthy target which is worth approximating. They&#8217;re isolated examples which are easy to parallelize and hardly count as real ventures into the field.</p>
+<p>Calculating digits of pi is marginally less useless and represents something which is significantly harder and tasks which may be closer to the kinds of computations which are performed in the real world. There have been other projects with similar goals, most notably, <a href="http://en.wikipedia.org/wiki/PiHex" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">PiHex</a>, which acts as a sort of vindication of this as a possible legitimate attempt. At this point, I have no idea if the algorithm works with digits in the order of trillions, and that&#8217;s one of the big reasons I&#8217;m not actually trying to succeed PiHex.</p>
+<h2>Revisting</h2>
+<p>Okay, so I decided to dig this up again.</p>
+<p>Why? Because I really want to play around with server-side JS a little more (just in case getting a node vps has anything to do with merit). The sort of funny thing is that&#8217;s exactly what it used to be, back in the ancient past, before NodeJS existed (it was before Google Chrome was released, and V8 wasn&#8217;t open source). I used to have an application which would schedule jobs for computation on the client and provide them in a more useful format.</p>
+<p>However, I never bothered saving the files outside of the <a href="http://en.wikipedia.org/wiki/AppJet" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">AppJet</a> web IDE and the code was lost when the service was discontinued. I tried porting to Google App Engine, but that version was plagued with strange bugs which ended up printing out the wrong digits after a few thousand were computed.</p>
+<p>Right now, revisiting the idea, I&#8217;ve added a few things which are somewhat more characteristic of the change in web browsers since my first attempt. The old version tried to mock threading by the liberal application of <code>setTimeout</code>, which meant that most interface interaction wouldn&#8217;t be terribly affected. However, it did incur a noticeable slowdown. Now, it uses WebWorkers, which provides numerous interesting possibilities. First and perhaps most important is context isolation and lightweight, asynchronous embedding in multiple domains (origins). Since WebWorkers can work (see what I did there?) across multiple origins and still have access to <code>XMLHttpRequest</code>, and the advent of Cross-Origin Resource Sharing (CORS), it&#8217;s easy to embed this in a page. The low embedding overhead and the true multi-threading abilities bring a lot in the way of making this more than an intriguing concept and into something much more practical.</p>
+<p>The code, which is now on the <a href="https://github.com/antimatter15/distributed-pi" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com']);">Github repository</a> in a new folder named <code>node</code> has a very basic interface. Rather than manipulating the widths of divs for progress indicators, now it uses <code>&lt;progress&gt;</code> (it&#8217;s actually really cool to see how far the state of web platform&#8217;s state of affairs has changed over the past few years). One cool thing about the progress bar is that it guesses progress by dividing the current prime number by the end point, which has an interesting effect of making the progress bar faster towards the end (this happens because the <a href="http://en.wikipedia.org/wiki/Prime_number_theorem#History_of_the_asymptotic_law_of_distribution_of_prime_numbers_and_its_proof" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">distribution of prime numbers asymptotically declines</a>). While I could possibly invert the effect in order to create a more linear progression fairly trivially, behavioral studies indicate that people who stare at progress bars all day feel less irritated (i.e. more satisfied) when the bar speeds up in the beginning and end (then again, the progress indicator isn&#8217;t really meant to be shown to people and if it is, the user experience is hardly something which is being optimized for, and this does nothing in the way of speeding up the beginning, in fact it&#8217;s quite the opposite by slowing down the beginning, so perhaps it should first linearize the progress and then map it to some function which as accelerated starts and ends, perhaps some trigonometric function).</p>
+<p>Part of what is cool about the project is the underlying algorithm, a port of <a href="http://en.wikipedia.org/wiki/Bellard%27s_formula" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">Fabrice Bellard&#8217;s</a> optimized version of the <a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org']);">Bailey–Borwein–Plouffe algorithm</a>. Unique to the algorithm is that it uses up comparably little memory and as such it&#8217;s uniquely suited to distributed computing, especially in the browser environment which demands relatively thin clients (however, browser caching means that the download would only necessarily need to be completed once, and embedding the computation in an <code>iframe</code> with certain storage permissions and appCache could allow persistence). It&#8217;s a relatively short algorithm and fairly easy to port.</p>
+<p>However, as it&#8217;s a digit extraction algorithm, it&#8217;s not very efficient for calculating digits sequentially. That actually is something of a feature which I neglected in the so-called modern incarnation. Older versions had the prime number (sub-job) allocation done on the server, which meant using up a lot of memory in keeping track of the jobs. The current one has a server which is entirely unaware of the actual computational process, which leads to being lighter persistence-wise but comes at the obvious cost of losing granularity in scheduling.</p>
+<p>One optimization about this strategy is that a client doesn&#8217;t have to wait for a server to respond with another job request in order to continue. Instead, it operates in an almost completely asynchronous manner. On the client&#8217;s first request, the server gives it a job which is given by a starting point (a prime number to continue from) and a digit number. From that point, the client begins computing until that digit is complete, sending its progress back to the server once in every specified interval (a couple of seconds).</p>
+<p>If the client was to disconnect in the middle of a computation (which can take quite some time, especially in later digits, so its more than certain to happen), the server will be able to resume the calculation by sending the request to another client after a certain expiration date has passed. So future refinements to the server (and possibly the client) could make it more efficient with processing digits of less significance by allocating jobs and taking into account certain checkpoints. For instance, all the prime numbers between 3 and some integer N have to be iterated through (where N is approximately 3 times the number of digits from the radix). Rather than maintaining a &#8220;single-threaded&#8221; system (as it currently does, the parallel processing power comes from sending out multiple digit segments to be processed), it could instead send out simultaneous requests for different segments. The client may have to be modified in order to stop at certain designated checkpoints to prevent clients from overlapping.</p>
+<p>This sort of scheme would be more efficient than storing jobs used in previous versions, first of all by retaining the sort of &#8220;dumb&#8221; server which doesn&#8217;t do any real computation that contributes to the process. Instead it only acts as a mediator and persistence layer (as perhaps is the best role to give to any server). Rather than keeping track of every single prime number as a different row in some database, the server would only need to keep track of as many sections as clients exist.</p>
+<p>The new version also has some interesting changes. First is the switch to <a href="http://nodejs.org/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://nodejs.org']);">NodeJS</a>, which was hinted at before, since it acts as a persistent server rather than something which is called and disposed like a CGI process, the queuing system is now entirely in-memory. However, as soon as its possible, it writes out the completed digits into a file (<code>pi.txt</code>), and if the server is ever interrupted the computations resume from the last saved version of the digits (only the jobs which were processing during the shutdown are lost). However, this would need to be changed if it were to be some more ideal use of the digit extraction method, since in such a situation, the vast majority of jobs would be for a single span of digits (and it would really suck to lose all of those).</p>
+<p>So in a sense, this update constitutes a regression, a step in the wrong direction in that it&#8217;s using the algorithm wrong. However, in another sense, it paves the way to a set up which has a few more ideal properties, a lighter weight server end and a more efficient use of computation time on the part of the clients. In essence, the shift from fixed sized discrete computational tasks (or jobs) to mere ranges. The obvious benefit to the latter is the reduced memory demand and the ability to operate continuously, i.e. without pausing for acquiring tasks and behaving truly asynchronously (in a very Node.JS style). Perhaps taking it further along this direction (since WebWorkers are allowed to access applicationCache), clients could be given a starting point and are just let to rip through a few hundred cycles, synchronizing less frequently. Some specialized data structures might be employed to keep track of individual contributions so that the ranges are doled out optimally. Maybe this should instead evolve into some kind of successor to the PiHex project rather than some incredibly slow and inefficient sequential pi calculation platform.</p>
+<p>One thing which I didn&#8217;t explore was the concept of having a persistent socket to the server. For this set of circumstances, the benefits of maintaining a persistent bidirectional socket weren&#8217;t large enough to warrant that kind of development. Right now, it&#8217;s communicating through a few small GET requests to a server. Part of the reason GET was used rather than POST was that it was designed with the idea that it could theoretically run in a cross-domain manner, and sending a POST request requires preflighting with CORS headers. Since it&#8217;s only ever really sending 30 or so bytes at a time, any additional overhead should be avoided. But this itself is also perhaps an argument for using WebSockets (though certainly not long-polling, since that incurs even more overhead). Quite often the synchronization requests don&#8217;t require the server to give anything back, but HTTP-wise, the server&#8217;s always going to have to send about a hundred bytes of headers to fulfill the HTTP requirements. Also, whenever the server sends a request, it wastes about a third of a kilobyte with header information like the User-Agent. Network-wise it might in the end be more efficient just to have a low-overhead persistent socket connection.</p>
+<p>Having a persistent socket would make synchronization interesting as well. While the changes wouldn&#8217;t be terribly drastic since there&#8217;s still the goal of minimizing transmission overhead, a few changes to the scheduling could be conveyed without necessarily waiting to the next checkpoint. And of course, there&#8217;s the trade-off which comes with the question of how long the checkpoints should be spaced. Right now, it&#8217;s something fairly low in the range of 10 seconds since the duration of a single page visit usually isn&#8217;t much more than a few seconds. However, if a client-side persistence layer is added, the checkpoints could be spaced out much wider. Perhaps instead of every few seconds, one could be made for every minute, hour, day or even week. Where a single computational task allocation could span multiple domains, multiple days and while the user is online and offline. However, having wider-spaced checkpoints does incur a cost in terms of synchronization. It reduces the operator&#8217;s sense of intimate awareness of what&#8217;s actually happening and increases the chance of overlaps.</p>
+<p>Another possible step is some kind of framework which handles all of these problems automatically. Instead of having to manually manage variables and the synchronization of tasks between clients and servers, one could construct a domain specific language for distributed computing (a superset or subset of javascript which automatically manages the state of variables in loops and such to compile into some kind of client for generic parallelized algorithms). Maybe it&#8217;ll do something cool and look at which loop is the optimal one to split up based on the amount of data which needs to be sent across so that it could be minimized.</p>
+<p>One of the things I played with while revisiting this project was playing with LLJS, another kind of specialized language which builds upon Javascript. As it&#8217;s marketed, the &#8220;bastard child of Javascript and C&#8221;, which manually manages memory. I was hoping that using a typed language might bring some speed improvements (not really, in this situation). However, LLJS might be a good basis for this auto-magical compiler for synchronous routines into largely parallelized code. However, maybe there are in fact limits to parallel computing, and it&#8217;s better to search for specific algorithms which have the right properties. And maybe in the end, the problem of porting it to Javascript and managing the client-server communication fades into a relative triviality.</p>
+		<div class="clear"></div>
+	</div><!-- .entry-content-->
+	
+	<p class="filed categories alt-font tight">Posted in <a href="http://antimatter15.com/wp/category/distributed-computing/" title="View all posts in Javascript Distributed Computing" rel="category tag">Javascript Distributed Computing</a>.</p>
+	<p class="filed tags alt-font tight">Tagged with <a href="http://antimatter15.com/wp/tag/bbp/" rel="tag">bbp</a>, <a href="http://antimatter15.com/wp/tag/computing/" rel="tag">computing</a>, <a href="http://antimatter15.com/wp/tag/cords/" rel="tag">cords</a>, <a href="http://antimatter15.com/wp/tag/distributed/" rel="tag">distributed</a>, <a href="http://antimatter15.com/wp/tag/distributed-computing-2/" rel="tag">distributed computing</a>, <a href="http://antimatter15.com/wp/tag/distributed-pi/" rel="tag">distributed pi</a>, <a href="http://antimatter15.com/wp/tag/fabrice-bellard/" rel="tag">fabrice bellard</a>, <a href="http://antimatter15.com/wp/tag/intelligence/" rel="tag">intelligence</a>, <a href="http://antimatter15.com/wp/tag/javascript/" rel="tag">javascript</a>, <a href="http://antimatter15.com/wp/tag/lljs/" rel="tag">lljs</a>, <a href="http://antimatter15.com/wp/tag/magical/" rel="tag">magical</a>, <a href="http://antimatter15.com/wp/tag/math/" rel="tag">math</a>, <a href="http://antimatter15.com/wp/tag/maths/" rel="tag">maths</a>, <a href="http://antimatter15.com/wp/tag/moore/" rel="tag">moore</a>, <a href="http://antimatter15.com/wp/tag/node/" rel="tag">node</a>, <a href="http://antimatter15.com/wp/tag/nodejs/" rel="tag">nodejs</a>, <a href="http://antimatter15.com/wp/tag/pi/" rel="tag">pi</a>, <a href="http://antimatter15.com/wp/tag/primes/" rel="tag">primes</a>, <a href="http://antimatter15.com/wp/tag/revive/" rel="tag">revive</a>, <a href="http://antimatter15.com/wp/tag/revsiting/" rel="tag">revsiting</a>, <a href="http://antimatter15.com/wp/tag/websockets/" rel="tag">websockets</a>, <a href="http://antimatter15.com/wp/tag/webworkers/" rel="tag">webworkers</a>.</p>
+	<p class="comments-link"><a href="http://antimatter15.com/wp/2012/08/distributed-pi-revisited/#respond" rev="post-1760"  title="Comment on Distributed Pi: Revisited">No comments</a></p>
+
+	<p class="by-line">
+		<span class="author vcard full-author">
+			<span class="by alt-font">By</span> <a class="url fn" href="http://antimatter15.com/wp/author/admin/" title="View all posts by admin">admin</a>		</span>
+		<span class="date full-date"><span class="ndash alt-font">&ndash;</span> <abbr class="published" title="2012-08-11T22:43">August 11, 2012</abbr></span>
+	</p><!--/by-line-->
+
+	<div id="post-comments-1760-target"></div>
+	<div class="clear"></div>
+	
+	</div><!-- .post -->	<div id="comments">
+
+<div class="rule-major"><hr /></div>
+
+<h2 class="h1 comments-title">0 Responses</h2>
+
+<p>Stay in touch with the conversation, subscribe to the <a class="feed" rel="alternate" href="http://antimatter15.com/wp/2012/08/distributed-pi-revisited/feed/"><acronym title="Really Simple Syndication">RSS</acronym> feed for comments on this post</a>.</p>
+
+
+<div id="respond-p1760">
+	<form action="http://antimatter15.com/wp/wp-comments-post.php" method="post" class="comment-form">
+		<p class="comment-form-comment tight">
+		<label class="h3" for="comment-p1760">Leave a Reply <em id="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link-p1760" href="/wp/2012/08/distributed-pi-revisited/#respond-p1760" style="display:none;">Cancel</a></em></label>
+			<br class="lofi" />
+			<span class="comment-form-comment-area">
+				<textarea id="comment-p1760" name="comment" rows="8" cols="40"></textarea><br />
+				<em class="some-html-is-ok"><abbr title="You can use: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; ">Some HTML is OK</abbr></em>
+			</span>
+		</p>
+		<p class="comment-form-user-info tight">
+			<input type="text" id="author-p1760" name="author" value="" size="22" />
+			<label for="author-p1760">Name</label>
+		</p><!--/name-->
+		<p class="comment-form-user-info tight">
+			<input type="text" id="email-p1760" name="email" value="" size="22" />
+			<label for="email-p1760">Email  <em>(never shared)</em></label>
+		</p><!--/email-->
+		<p class="comment-form-user-info tight">
+			<input type="text" id="url-p1760" name="url" value="" size="22" />
+			<label title="Your website address" for="url-p1760">Web</label>
+		</p><!--/url-->
+		<p class="tight">
+			<input name="submit" type="submit" value="Post comment" />
+			<span class="comment-form-trackback">or, reply to this post via <a rel="trackback" href="http://antimatter15.com/wp/2012/08/distributed-pi-revisited/trackback/">trackback</a>.</span>
+		</p>
+<input type='hidden' name='comment_post_ID' value='1760' id='comment_post_ID_p1760' />
+<input type='hidden' name='comment_parent' id='comment_parent_p1760' value='0' />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="189cdd0fe5" /></p><script type='text/javascript' src='http://antimatter15.com/wp/wp-content/plugins/akismet/_inc/form.js?ver=3.0.0'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="250"/></p>	</form>
+</div>
+	</div><!--#comments-->
+
+	<div class="pagination-single">
+		<span class="previous">&laquo; <a href="http://antimatter15.com/wp/2012/07/cloudfall-a-text-editor/" rel="prev">CloudFall: A Text Editor</a></span>
+		<span class="next"><a href="http://antimatter15.com/wp/2012/08/swipe-gesture-for-chrome/" rel="next">Swipe Gesture for Chrome</a> &raquo;</span>
+	</div>
+
+</div><!--#content-->
+
+<hr class="lofi" />
+<div id="sidebar">
+	<div id="rssfeeds" style="background: transparent url(http://antimatter15.com/wp/wp-content/themes/carrington-woot/img/rss.gif) no-repeat scroll left center;padding-left: 18px;margin-bottom:18px">RSS: <a href="http://antimatter15.com/wp/feed/">Entries</a> | <a href="http://antimatter15.com/wp/comments/feed/">Comments</a></div>
+	<div id="carrington-about" class="widget">
+		<div class="about">
+			<h2 class="widget-title">About</h2>
+I&#8217;m really not that interesting. This blog is just a place where I talk about random ideas or projects like just about everyone else. I&#8217;ve never really been into talking about myself, rather just the stuff I do or think. I may be somewhat paranoid, or whatever.  I think I&#8217;m an INTP but I&#8217;m not [&hellip;]<a class="more" href="http://antimatter15.com/wp/about/">more &rarr;</a>		</div>
+	</div><!--.widget-->
+
+	<div id="primary-sidebar">
+<div id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-312"><a href="http://antimatter15.com/wp/category/3d/" title="View all posts filed under 3D">3D</a>
+<ul class='children'>
+	<li class="cat-item cat-item-836"><a href="http://antimatter15.com/wp/category/3d/additive-3d-glasses/" title="View all posts filed under Additive 3D Glasses">Additive 3D Glasses</a>
+</li>
+	<li class="cat-item cat-item-823"><a href="http://antimatter15.com/wp/category/3d/digital-sculpting-3d/" title="View all posts filed under Digital Sculpting">Digital Sculpting</a>
+</li>
+	<li class="cat-item cat-item-832"><a href="http://antimatter15.com/wp/category/3d/function-plotter/" title="View all posts filed under Function Plotter">Function Plotter</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://antimatter15.com/wp/category/ajaxanimator/" title="Stuff about my project, the Ajax Animator.">Ajax Animator</a>
+<ul class='children'>
+	<li class="cat-item cat-item-669"><a href="http://antimatter15.com/wp/category/ajaxanimator/forkswif/" title="View all posts filed under ForkSwif">ForkSwif</a>
+</li>
+	<li class="cat-item cat-item-909"><a href="http://antimatter15.com/wp/category/ajaxanimator/onlypaths-ajaxanimator/" title="View all posts filed under OnlyPaths">OnlyPaths</a>
+</li>
+	<li class="cat-item cat-item-774"><a href="http://antimatter15.com/wp/category/ajaxanimator/stick-figures/" title="View all posts filed under Stick Figures">Stick Figures</a>
+</li>
+	<li class="cat-item cat-item-676"><a href="http://antimatter15.com/wp/category/ajaxanimator/vectoreditor-ajaxanimator/" title="View all posts filed under VectorEditor">VectorEditor</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-440"><a href="http://antimatter15.com/wp/category/chrome-2/" title="Google Chrome extensions">Chrome Extensions</a>
+<ul class='children'>
+	<li class="cat-item cat-item-660"><a href="http://antimatter15.com/wp/category/chrome-2/cloud-save-chrome-2/" title="View all posts filed under Cloud Save">Cloud Save</a>
+</li>
+	<li class="cat-item cat-item-598"><a href="http://antimatter15.com/wp/category/chrome-2/cloudfall-chrome-2/" title="View all posts filed under CloudFall">CloudFall</a>
+</li>
+	<li class="cat-item cat-item-444"><a href="http://antimatter15.com/wp/category/chrome-2/chrome-desksearch/" title="View all posts filed under Desktop Search">Desktop Search</a>
+</li>
+	<li class="cat-item cat-item-442"><a href="http://antimatter15.com/wp/category/chrome-2/drag2up/" title="drag and drop files">drag2up</a>
+</li>
+	<li class="cat-item cat-item-443"><a href="http://antimatter15.com/wp/category/chrome-2/hide-elements/" title="Hide Elements">Hide Elements</a>
+</li>
+	<li class="cat-item cat-item-647"><a href="http://antimatter15.com/wp/category/chrome-2/google-music-2/" title="View all posts filed under MusicAlpha">MusicAlpha</a>
+</li>
+	<li class="cat-item cat-item-699"><a href="http://antimatter15.com/wp/category/chrome-2/swipe-gesture/" title="View all posts filed under Swipe Gesture">Swipe Gesture</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1289"><a href="http://antimatter15.com/wp/category/color-2/" title="View all posts filed under Color">Color</a>
+</li>
+	<li class="cat-item cat-item-606"><a href="http://antimatter15.com/wp/category/data/" title="View all posts filed under Data">Data</a>
+<ul class='children'>
+	<li class="cat-item cat-item-607"><a href="http://antimatter15.com/wp/category/data/facebook-visualization/" title="View all posts filed under Facebook Visualization">Facebook Visualization</a>
+</li>
+	<li class="cat-item cat-item-1137"><a href="http://antimatter15.com/wp/category/data/planckwmap/" title="View all posts filed under Planck/WMAP">Planck/WMAP</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-659"><a href="http://antimatter15.com/wp/category/design/" title="View all posts filed under Design">Design</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1043"><a href="http://antimatter15.com/wp/category/design/fluidizer/" title="View all posts filed under Fluidizer">Fluidizer</a>
+</li>
+	<li class="cat-item cat-item-1064"><a href="http://antimatter15.com/wp/category/design/scroll-bar/" title="View all posts filed under Scroll Bar">Scroll Bar</a>
+</li>
+	<li class="cat-item cat-item-1049"><a href="http://antimatter15.com/wp/category/design/the-foward-button/" title="View all posts filed under The Foward Button">The Foward Button</a>
+</li>
+	<li class="cat-item cat-item-1066"><a href="http://antimatter15.com/wp/category/design/web-notifications/" title="View all posts filed under Web Notifications">Web Notifications</a>
+</li>
+	<li class="cat-item cat-item-1025"><a href="http://antimatter15.com/wp/category/design/zooming-user-interface/" title="View all posts filed under Zooming User Interface">Zooming User Interface</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-605"><a href="http://antimatter15.com/wp/category/school-2/" title="View all posts filed under Education">Education</a>
+<ul class='children'>
+	<li class="cat-item cat-item-611"><a href="http://antimatter15.com/wp/category/school-2/schedule-compare-school-2/" title="View all posts filed under Schedule Compare">Schedule Compare</a>
+</li>
+	<li class="cat-item cat-item-1093"><a href="http://antimatter15.com/wp/category/school-2/vectorized/" title="View all posts filed under Vectorized">Vectorized</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-608"><a href="http://antimatter15.com/wp/category/jokes/" title="View all posts filed under Fun">Fun</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1099"><a href="http://antimatter15.com/wp/category/jokes/facebook-bot/" title="View all posts filed under Facebook Bot">Facebook Bot</a>
+</li>
+	<li class="cat-item cat-item-446"><a href="http://antimatter15.com/wp/category/jokes/goog-venn/" title="View all posts filed under Google Suggest Venn Diagrams">Google Suggest Venn Diagrams</a>
+</li>
+	<li class="cat-item cat-item-610"><a href="http://antimatter15.com/wp/category/jokes/pepper-spray-cop/" title="View all posts filed under Pepper Spray Cop">Pepper Spray Cop</a>
+</li>
+	<li class="cat-item cat-item-688"><a href="http://antimatter15.com/wp/category/jokes/sideways-google/" title="View all posts filed under Sideways Google">Sideways Google</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-596"><a href="http://antimatter15.com/wp/category/games/" title="Experiments with building things which might be confused with games">Games</a>
+<ul class='children'>
+	<li class="cat-item cat-item-661"><a href="http://antimatter15.com/wp/category/games/cometrpg/" title="View all posts filed under CometRPG">CometRPG</a>
+</li>
+	<li class="cat-item cat-item-698"><a href="http://antimatter15.com/wp/category/games/gravity/" title="View all posts filed under Gravity">Gravity</a>
+</li>
+	<li class="cat-item cat-item-597"><a href="http://antimatter15.com/wp/category/games/pinball/" title="View all posts filed under Pinball">Pinball</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-342"><a href="http://antimatter15.com/wp/category/gwave/" title="View all posts filed under Google Wave">Google Wave</a>
+<ul class='children'>
+	<li class="cat-item cat-item-343"><a href="http://antimatter15.com/wp/category/gwave/anony-bot/" title="View all posts filed under Anony-bot">Anony-bot</a>
+</li>
+	<li class="cat-item cat-item-344"><a href="http://antimatter15.com/wp/category/gwave/anony-bot-embed/" title="View all posts filed under Deep Comment Integration">Deep Comment Integration</a>
+</li>
+	<li class="cat-item cat-item-345"><a href="http://antimatter15.com/wp/category/gwave/microwave-wave-2/" title="View all posts filed under Microwave">Microwave</a>
+</li>
+	<li class="cat-item cat-item-350"><a href="http://antimatter15.com/wp/category/gwave/wave-reader-wave-2/" title="View all posts filed under Wave Reader">Wave Reader</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-651"><a href="http://antimatter15.com/wp/category/google-plus-2/" title="View all posts filed under Google+">Google+</a>
+<ul class='children'>
+	<li class="cat-item cat-item-613"><a href="http://antimatter15.com/wp/category/google-plus-2/surplus-chrome-2/" title="View all posts filed under Surplus">Surplus</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-757"><a href="http://antimatter15.com/wp/category/hardware-2/" title="View all posts filed under Hardware">Hardware</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1159"><a href="http://antimatter15.com/wp/category/hardware-2/arduino-scanner/" title="View all posts filed under Arduino + Scanner">Arduino + Scanner</a>
+</li>
+	<li class="cat-item cat-item-758"><a href="http://antimatter15.com/wp/category/hardware-2/raspberry-pi/" title="View all posts filed under Raspberry Pi">Raspberry Pi</a>
+</li>
+	<li class="cat-item cat-item-783"><a href="http://antimatter15.com/wp/category/hardware-2/samsung-series-5/" title="View all posts filed under Samsung Series 5">Samsung Series 5</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://antimatter15.com/wp/category/distributed-computing/" title="View all posts filed under Javascript Distributed Computing">Javascript Distributed Computing</a>
+</li>
+	<li class="cat-item cat-item-609"><a href="http://antimatter15.com/wp/category/meta/" title="View all posts filed under Meta">Meta</a>
+</li>
+	<li class="cat-item cat-item-697"><a href="http://antimatter15.com/wp/category/mp3-player/" title="View all posts filed under MP3 Player">MP3 Player</a>
+</li>
+	<li class="cat-item cat-item-1021"><a href="http://antimatter15.com/wp/category/codecs/" title="View all posts filed under Multimedia Codecs">Multimedia Codecs</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1036"><a href="http://antimatter15.com/wp/category/codecs/animated-gif-encoder/" title="View all posts filed under Animated GIF Encoder">Animated GIF Encoder</a>
+</li>
+	<li class="cat-item cat-item-1065"><a href="http://antimatter15.com/wp/category/codecs/freemoviejs/" title="View all posts filed under Freemovie/JS">Freemovie/JS</a>
+</li>
+	<li class="cat-item cat-item-1042"><a href="http://antimatter15.com/wp/category/codecs/mp3-id3v2-parser/" title="View all posts filed under MP3 ID3v2 Parser">MP3 ID3v2 Parser</a>
+</li>
+	<li class="cat-item cat-item-1022"><a href="http://antimatter15.com/wp/category/codecs/vp8-vs-h-264/" title="View all posts filed under VP8 vs. H.264">VP8 vs. H.264</a>
+</li>
+	<li class="cat-item cat-item-445"><a href="http://antimatter15.com/wp/category/codecs/weppy-other/" title="View all posts filed under Weppy">Weppy</a>
+</li>
+	<li class="cat-item cat-item-1068"><a href="http://antimatter15.com/wp/category/codecs/whammy/" title="View all posts filed under Whammy">Whammy</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-648"><a href="http://antimatter15.com/wp/category/offline-wiki-other/" title="View all posts filed under Offline Wiki">Offline Wiki</a>
+</li>
+	<li class="cat-item cat-item-79"><a href="http://antimatter15.com/wp/category/other/" title="View all posts filed under Other">Other</a>
+</li>
+	<li class="cat-item cat-item-346"><a href="http://antimatter15.com/wp/category/p2p-other/" title="View all posts filed under P2P">P2P</a>
+</li>
+	<li class="cat-item cat-item-1081"><a href="http://antimatter15.com/wp/category/pedant/" title="View all posts filed under Pedant">Pedant</a>
+</li>
+	<li class="cat-item cat-item-1283"><a href="http://antimatter15.com/wp/category/project-naptha/" title="View all posts filed under Project Naptha">Project Naptha</a>
+</li>
+	<li class="cat-item cat-item-80"><a href="http://antimatter15.com/wp/category/project-wikify/" title="View all posts filed under Project Wikify">Project Wikify</a>
+</li>
+	<li class="cat-item cat-item-1023"><a href="http://antimatter15.com/wp/category/security-2/" title="View all posts filed under Security">Security</a>
+<ul class='children'>
+	<li class="cat-item cat-item-1024"><a href="http://antimatter15.com/wp/category/security-2/anti-phishing-system/" title="View all posts filed under Anti-Phishing System">Anti-Phishing System</a>
+</li>
+	<li class="cat-item cat-item-1053"><a href="http://antimatter15.com/wp/category/security-2/clickjacking/" title="View all posts filed under Clickjacking">Clickjacking</a>
+</li>
+	<li class="cat-item cat-item-1067"><a href="http://antimatter15.com/wp/category/security-2/hash-functions/" title="View all posts filed under Hash Functions">Hash Functions</a>
+</li>
+	<li class="cat-item cat-item-1158"><a href="http://antimatter15.com/wp/category/security-2/passwords/" title="View all posts filed under Passwords">Passwords</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-447"><a href="http://antimatter15.com/wp/category/streamie-other/" title="View all posts filed under Streamie">Streamie</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="http://antimatter15.com/wp/category/touchscreens/" title="View all posts filed under Touchscreens">Touchscreens</a>
+<ul class='children'>
+	<li class="cat-item cat-item-7"><a href="http://antimatter15.com/wp/category/touchscreens/mirrortouch/" title="View all posts filed under MirrorTouch">MirrorTouch</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://antimatter15.com/wp/category/touchscreens/shinytouch/" title="View all posts filed under ShinyTouch">ShinyTouch</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://antimatter15.com/wp/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-662"><a href="http://antimatter15.com/wp/category/vnc-in-ext-js-desktop/" title="View all posts filed under VNC in Ext.JS Desktop">VNC in Ext.JS Desktop</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://antimatter15.com/wp/category/vxjs/" title="View all posts filed under vX JS">vX JS</a>
+</li>
+		</ul>
+<div class="clear"></div></div>		<div id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/05/perceptual-color-distance-and-rgb-and-lab/">Perceptual color distance and RGB and L*a*b</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/04/project-naptha/">Project Naptha</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/03/unwarranted-speculation-on-oculus-vr/">Unwarranted Speculation On Oculus VR</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/02/february-progress-report/">February Progress Report</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2014/01/heapqueue-js/">HeapQueue.JS</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/12/ocrad-js-pure-javascript-ocr-via-emscripten/">OCRAD.js: Pure Javascript OCR via Emscripten</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/11/november-progress-report/">November Progress Report</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/10/october-progress-update/">October Progress Update</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/09/casio-mute/">Muting a Casio W-201 Watch</a>
+						</li>
+					<li>
+				<a href="http://antimatter15.com/wp/2013/09/x-no-wiretap/">X-No-Wiretap</a>
+						</li>
+				</ul>
+		<div class="clear"></div></div><div id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+	<li><a href='http://antimatter15.com/wp/2014/05/'>May 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/04/'>April 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/03/'>March 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/02/'>February 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2014/01/'>January 2014</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/12/'>December 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/11/'>November 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/10/'>October 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/09/'>September 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/08/'>August 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/07/'>July 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/06/'>June 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/05/'>May 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/04/'>April 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/03/'>March 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/02/'>February 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2013/01/'>January 2013</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/12/'>December 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/11/'>November 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/10/'>October 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/09/'>September 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/08/'>August 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/07/'>July 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/06/'>June 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/05/'>May 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/04/'>April 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/03/'>March 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/02/'>February 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2012/01/'>January 2012</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/12/'>December 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/11/'>November 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/10/'>October 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/09/'>September 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/08/'>August 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/07/'>July 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/06/'>June 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/05/'>May 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/04/'>April 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/03/'>March 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/02/'>February 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2011/01/'>January 2011</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/12/'>December 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/11/'>November 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/10/'>October 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/09/'>September 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/08/'>August 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/07/'>July 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/06/'>June 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/05/'>May 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/04/'>April 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/03/'>March 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/02/'>February 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2010/01/'>January 2010</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/12/'>December 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/11/'>November 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/10/'>October 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/09/'>September 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/08/'>August 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/07/'>July 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/06/'>June 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/05/'>May 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/04/'>April 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/03/'>March 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2009/01/'>January 2009</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/12/'>December 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/11/'>November 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/10/'>October 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/09/'>September 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/08/'>August 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/07/'>July 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/06/'>June 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/05/'>May 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/04/'>April 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/03/'>March 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/02/'>February 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2008/01/'>January 2008</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/12/'>December 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/11/'>November 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/10/'>October 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/09/'>September 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/08/'>August 2007</a></li>
+	<li><a href='http://antimatter15.com/wp/2007/05/'>May 2007</a></li>
+		</ul>
+<div class="clear"></div></div><div id="tag_cloud-4" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2><div class="tagcloud"><a href='http://antimatter15.com/wp/tag/ajax/' class='tag-link-28' title='14 topics' style='font-size: 14.794117647059pt;'>ajax</a>
+<a href='http://antimatter15.com/wp/tag/ajax-animator/' class='tag-link-261' title='16 topics' style='font-size: 15.823529411765pt;'>ajax animator</a>
+<a href='http://antimatter15.com/wp/tag/apple/' class='tag-link-322' title='10 topics' style='font-size: 11.911764705882pt;'>apple</a>
+<a href='http://antimatter15.com/wp/tag/browser/' class='tag-link-129' title='10 topics' style='font-size: 11.911764705882pt;'>browser</a>
+<a href='http://antimatter15.com/wp/tag/bugfix/' class='tag-link-149' title='6 topics' style='font-size: 8pt;'>bugfix</a>
+<a href='http://antimatter15.com/wp/tag/chrome/' class='tag-link-128' title='26 topics' style='font-size: 19.941176470588pt;'>chrome</a>
+<a href='http://antimatter15.com/wp/tag/elitist/' class='tag-link-19' title='9 topics' style='font-size: 11.088235294118pt;'>elitist</a>
+<a href='http://antimatter15.com/wp/tag/evil/' class='tag-link-231' title='8 topics' style='font-size: 10.058823529412pt;'>evil</a>
+<a href='http://antimatter15.com/wp/tag/extension/' class='tag-link-422' title='8 topics' style='font-size: 10.058823529412pt;'>extension</a>
+<a href='http://antimatter15.com/wp/tag/extjs/' class='tag-link-134' title='9 topics' style='font-size: 11.088235294118pt;'>ExtJS</a>
+<a href='http://antimatter15.com/wp/tag/fast/' class='tag-link-24' title='9 topics' style='font-size: 11.088235294118pt;'>fast</a>
+<a href='http://antimatter15.com/wp/tag/features/' class='tag-link-163' title='6 topics' style='font-size: 8pt;'>features</a>
+<a href='http://antimatter15.com/wp/tag/firefox/' class='tag-link-150' title='11 topics' style='font-size: 12.735294117647pt;'>firefox</a>
+<a href='http://antimatter15.com/wp/tag/flash/' class='tag-link-50' title='7 topics' style='font-size: 9.0294117647059pt;'>flash</a>
+<a href='http://antimatter15.com/wp/tag/future/' class='tag-link-234' title='6 topics' style='font-size: 8pt;'>future</a>
+<a href='http://antimatter15.com/wp/tag/github/' class='tag-link-257' title='6 topics' style='font-size: 8pt;'>github</a>
+<a href='http://antimatter15.com/wp/tag/google/' class='tag-link-75' title='33 topics' style='font-size: 22pt;'>google</a>
+<a href='http://antimatter15.com/wp/tag/google-wave/' class='tag-link-224' title='13 topics' style='font-size: 14.176470588235pt;'>google wave</a>
+<a href='http://antimatter15.com/wp/tag/hosting/' class='tag-link-6' title='8 topics' style='font-size: 10.058823529412pt;'>hosting</a>
+<a href='http://antimatter15.com/wp/tag/html5/' class='tag-link-340' title='8 topics' style='font-size: 10.058823529412pt;'>html5</a>
+<a href='http://antimatter15.com/wp/tag/internet-exploder/' class='tag-link-85' title='9 topics' style='font-size: 11.088235294118pt;'>internet exploder</a>
+<a href='http://antimatter15.com/wp/tag/ipad/' class='tag-link-321' title='7 topics' style='font-size: 9.0294117647059pt;'>ipad</a>
+<a href='http://antimatter15.com/wp/tag/javascript/' class='tag-link-77' title='27 topics' style='font-size: 20.352941176471pt;'>javascript</a>
+<a href='http://antimatter15.com/wp/tag/json/' class='tag-link-118' title='6 topics' style='font-size: 8pt;'>json</a>
+<a href='http://antimatter15.com/wp/tag/linux/' class='tag-link-46' title='7 topics' style='font-size: 9.0294117647059pt;'>linux</a>
+<a href='http://antimatter15.com/wp/tag/login/' class='tag-link-136' title='6 topics' style='font-size: 8pt;'>login</a>
+<a href='http://antimatter15.com/wp/tag/new/' class='tag-link-83' title='8 topics' style='font-size: 10.058823529412pt;'>new</a>
+<a href='http://antimatter15.com/wp/tag/offline/' class='tag-link-491' title='7 topics' style='font-size: 9.0294117647059pt;'>offline</a>
+<a href='http://antimatter15.com/wp/tag/old/' class='tag-link-202' title='7 topics' style='font-size: 9.0294117647059pt;'>old</a>
+<a href='http://antimatter15.com/wp/tag/onlypaths/' class='tag-link-103' title='7 topics' style='font-size: 9.0294117647059pt;'>onlypaths</a>
+<a href='http://antimatter15.com/wp/tag/pi/' class='tag-link-35' title='8 topics' style='font-size: 10.058823529412pt;'>pi</a>
+<a href='http://antimatter15.com/wp/tag/python/' class='tag-link-44' title='10 topics' style='font-size: 11.911764705882pt;'>python</a>
+<a href='http://antimatter15.com/wp/tag/raphael/' class='tag-link-140' title='8 topics' style='font-size: 10.058823529412pt;'>raphael</a>
+<a href='http://antimatter15.com/wp/tag/shiny/' class='tag-link-15' title='11 topics' style='font-size: 12.735294117647pt;'>shiny</a>
+<a href='http://antimatter15.com/wp/tag/small/' class='tag-link-113' title='8 topics' style='font-size: 10.058823529412pt;'>small</a>
+<a href='http://antimatter15.com/wp/tag/svg/' class='tag-link-95' title='6 topics' style='font-size: 8pt;'>SVG</a>
+<a href='http://antimatter15.com/wp/tag/update/' class='tag-link-98' title='24 topics' style='font-size: 19.323529411765pt;'>update</a>
+<a href='http://antimatter15.com/wp/tag/upload/' class='tag-link-425' title='7 topics' style='font-size: 9.0294117647059pt;'>upload</a>
+<a href='http://antimatter15.com/wp/tag/vectoreditor/' class='tag-link-198' title='8 topics' style='font-size: 10.058823529412pt;'>vectoreditor</a>
+<a href='http://antimatter15.com/wp/tag/video/' class='tag-link-255' title='6 topics' style='font-size: 8pt;'>video</a>
+<a href='http://antimatter15.com/wp/tag/vxjs/' class='tag-link-27' title='8 topics' style='font-size: 10.058823529412pt;'>vX JS</a>
+<a href='http://antimatter15.com/wp/tag/wave/' class='tag-link-220' title='17 topics' style='font-size: 16.441176470588pt;'>wave</a>
+<a href='http://antimatter15.com/wp/tag/wikify/' class='tag-link-81' title='9 topics' style='font-size: 11.088235294118pt;'>wikify</a>
+<a href='http://antimatter15.com/wp/tag/wikipedia/' class='tag-link-16' title='7 topics' style='font-size: 9.0294117647059pt;'>wikipedia</a>
+<a href='http://antimatter15.com/wp/tag/wordpress/' class='tag-link-97' title='9 topics' style='font-size: 11.088235294118pt;'>wordpress</a></div>
+<div class="clear"></div></div>	</div><!--#primary-sidebar-->
+	
+	<div class="clear"></div>
+</div><!--#sidebar-->			<div class="clear"></div>
+			</div><!-- .wrapper -->
+		</div><!-- #main -->
+		<hr class="lofi" />
+		<div id="footer" class="section">
+			<div class="wrapper">		
+				<p id="generator-link">Powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and <a href="http://carringtontheme.com" title="Carrington theme for WordPress">Carrington</a>.</p>
+			</div><!--.wrapper-->
+		</div><!--#footer -->
+	</div><!--#page-->
+	<script>$=jQuery</script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201423'></script>
+</body>
+</html>
